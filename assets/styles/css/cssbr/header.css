@@ -1,0 +1,52 @@
+.header {
+    height: 3.472222%;
+    /* 50px/1440px */
+    /*je lui demande de s'aligner*/
+    display: flex;
+    /*je lui demande de s'espacer*/
+    background-color: #08090E;
+    color: white;
+}
+
+.header>a {
+    width: 10%;
+}
+
+.header .logo {
+    padding: 5%;
+    margin-left: 10%;
+    height: auto;
+    width: 30%;
+}
+
+.header .menu_ {
+    display: flex;
+}
+
+.header .menu_ .icon svg {
+    display: none;
+}
+
+.header .menu_ .navbar {
+    display: flex;
+
+}
+
+.header .navbar li {
+    font-size: 20px;
+    margin-right: 10%;
+    /*aligner les svg et li*/
+    display: inline-flex;
+    align-items: center;
+}
+
+.header .navbar li:hover {
+    background-color: #562F83;
+}
+
+
+
+/* =============== class active ==================== */
+.active{
+    background-color: #562F83;
+}

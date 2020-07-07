@@ -1,0 +1,103 @@
+h1, h2,h3,h5,h6{
+    text-align: center;
+    vertical-align: middle;
+}
+/*================Slider======================*/
+.slider img {
+    width: 100%;
+    /* je lui met une 
+    hauteur de  300px pour que l'image
+    ne soit pas trop haute */
+    height: 500px;
+}
+.slider > figcaption{
+    margin-top: -15%;
+    margin-bottom: 15%;
+}
+.slider > figcaption > div.precedent,
+.slider > figcaption > div.suivant{
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slider > figcaption > div.suivant{
+    right: 10px;
+}
+.slider > figcaption > div.precedent{
+    left: 10px;
+}
+
+/* ========================================================
+                            Boutique
+======================================================== */
+
+body > main > section.row.Boutiques > article:nth-child(1) > figure > img,
+body > main > section.row.Boutiques > article:nth-child(2) > figure > img{ 
+    /* je definie sa hauteur max je met un important pour que sa passe avant la config img-fluid*/
+    max-height: 300px !important;
+
+}
+body > main > section.row.Boutiques > article:nth-child(1) > figure > figcaption > address,
+body > main > section.row.Boutiques > article:nth-child(2) > figure > figcaption > address
+{
+text-align: center;
+}
+body > main > section.row.Boutiques > article > figure > figcaption > table > tbody > tr > td.day{
+    font-weight: 700;
+}
+/*=============Galerie==================*/
+
+body > main > section.Galerie > article.conteneur.carousel{
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+
+body > main > section.Galerie > article.conteneur.carousel > div.precedent,
+body > main > section.Galerie > article.conteneur.carousel > div.suivant{
+    margin-top: -18%;
+}
+
+body > main > section.Galerie > article > div.row.blockOne > figure.item{
+    background-color: #fff;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    transition: transform 0.3s;
+    transform: translate3d(0, -1px, 0);
+    -webkit-transform: translate3d(0, -1px, 0);
+    -moz-transform: translate3d(0, -1px, 0);
+    -ms-transform: translate3d(0, -1px, 0);
+    -o-transform: translate3d(0, -1px, 0);
+}
+body > main > section.Galerie > article > div.row.blockOne > figure.item:hover {
+    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+}
+
+body > main > section.Galerie > article > div.row.blockOne > figure.item > img.img_resp.item__image{
+    width: 100%;
+    max-height: 300px;
+}
+/* ==============Actu================== */
+.Actu aside{
+    display: flex;
+    justify-content: space-around;
+}
+body > main > section.container.Actu > article{
+margin-bottom: 5%;
+}
+
+body > main > section.container.Actu > a > svg.svg-inline--fa.fa-facebook.fa-w-16 {
+    width: 5%;
+    margin-left: 47%;
+    color: #562F83;
+}

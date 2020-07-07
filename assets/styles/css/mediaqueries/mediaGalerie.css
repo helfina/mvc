@@ -1,0 +1,17 @@
+@media screen and (max-width: 425px) and (min-width: 320px){
+    .item__body{
+    display: none;
+}
+.btn{
+    margin: 3px;
+}}
+@media only screen and (max-width: 758px) and (min-width: 425px){
+    .item__body{
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 758px){
+    .btn{ min-height: 20px;}
+}
+
+/* @media only screen and (max-width:1200px) and (min-width: 992px){} */

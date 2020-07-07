@@ -1,0 +1,92 @@
+@media only screen and (max-width:425px) and (min-width: 320px) {
+        /*==================SLIDER==========================*/
+        .slider {
+            display: none;
+        }
+/*============================BOUTIQUES==================*/
+    .adresse {
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+    }
+        /*===============GALERIE===========================*/
+        .Galerie {
+            display: none;
+        }
+}
+
+@media only screen and (max-width:758px) and (min-width: 425px) {
+
+    /*==================SLIDER==========================*/
+    .slider {
+        display: none;
+    }
+    /*==========BOUTIQUES=================================*/
+    .adresse {
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+    }
+    .Boutiques figure img{
+        max-height: 100px ! important;
+    }
+    td {
+        font-size: small;
+    }
+
+    .day {
+        font-weight: bold;
+    }
+    /*===============GALERIE===========================*/
+    .Galerie{
+        display: none;
+    }
+/*===============ACTU===========================*/
+    .svg-inline--fa.fa-facebook.fa-w-16 {
+        width: 9%;
+        margin-left: 46%;
+        color: blue;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width: 758px){
+    
+.Galerie .carousel {
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+
+.Galerie .carousel .precedent, .Galerie .carousel .suivant{
+    margin-top: -18%;
+}
+
+.Galerie .carousel .item {
+    background-color: #fff;
+    box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+    transition: transform 0.3s;
+    transform: translate3d(0, -1px, 0);
+    -webkit-transform: translate3d(0, -1px, 0);
+    -moz-transform: translate3d(0, -1px, 0);
+    -ms-transform: translate3d(0, -1px, 0);
+    -o-transform: translate3d(0, -1px, 0);
+}
+
+.Galerie .item:hover {
+    transform: translate3d(0, -10px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+}
+
+.Galerie .item img {
+    width: 100%;
+    max-height: auto;
+}
+.Galerie figcaption.item__body {
+    display: none;
+}
+}
