@@ -2,16 +2,9 @@
 include_once '_config/config.php';
 include_once '_config/db.php';
 include_once '_functions/functions.php';
+include_once '_classes/Autoloader.php';
+Autoloader::register();
 
-include_once '_classes/Authors.php';
-include_once '_classes/Categories.php';
-include_once '_classes/Articles.php';
-include_once '_classes/Images.php';
-include_once '_classes/Shop.php';
-
-// $var = Articles::getLastArticles();
-// debug($var);
-// exit;
 
 
 /**
