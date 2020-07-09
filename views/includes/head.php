@@ -19,6 +19,7 @@
 
 <!-- CSS Styles -->
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.css"/>
+<!-- <link rel="stylesheet" href="<?= PATH?>assets/styles/css/compass.css"> -->
 
 
 
@@ -28,18 +29,24 @@
 
 <!--******mes feuilles de styles/ my stylsheet********-->
 
-<link rel="stylesheet" href="assets\styles\css\cssbr\grille.css">
+<link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\grille.css">
 
-<link rel="stylesheet" href="assets\styles\css\cssbr\footer.css">
+<link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\footer.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="assets\styles\css\mediaqueries\mediaheaderfooter.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets\styles\css\mediaqueries\mediaheaderfooter.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="assets\styles\css\mediaqueries\mediaindex.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets\styles\css\mediaqueries\mediaindex.css">
 
-<link rel="stylesheet" href="assets\styles\css\cssbr\header.css">
+<link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\header.css">
 
-<link rel="stylesheet" href="assets\styles\css\cssbr\index.css">
+<link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\index.css">
 
 
 <!-- JS Files -->
-<script src="/assets/js/slider.js"></script>
+<script src="<?= PATH?>assets/js/header.js"></script>
+<script src="<?= PATH?>assets/js/slider.js"></script>
+<script src="<?= PATH?>assets/js/galerie.js"></script>
+<script src="<?= PATH?>assets/js/carousel.js"></script>
+<script src="<?= PATH?>assets/js/contact.js"></script>
+<script src="/>assets/js/auto.js"></script>
+<script src="/assets/js/openstreetmap.js"></script>

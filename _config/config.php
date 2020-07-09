@@ -47,4 +47,5 @@ define("DATABASE_NAME", "mvcbr");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD","");
 
-
+//Language
+define("DEFAULT_LANGUAGE", "fr");

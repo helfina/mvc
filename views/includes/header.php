@@ -1,7 +1,7 @@
 <header class="header">
         <!-- ******Logo******* -->
         <a href="index.html">
-            <img class="logo" src="../../assets/images/logobr.png" alt="logo">
+            <img class="logo" src="./mvc/assets/images/logobr.jpg" alt="logo">
         </a>
 
         <nav class="menu_" id="Menu">

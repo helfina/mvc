@@ -38,7 +38,7 @@ class Articles
 
         
     /**
-     * getAllArticles Envoie tous les articles
+     * getAllArticles Envois tous les articles
      *
      * @return void
      */
@@ -47,6 +47,7 @@ class Articles
             global $db;
 
             $reqArticle = $db->prepare('
+            
             SELECT a.*, au.firstname, au.lastname, c.name AS category
             FROM articles a
             INNER JOIN authors au  ON au.id = a.author_id

@@ -1,15 +1,15 @@
 <?php
 include_once '_config/config.php';
-include_once '_config/db.php';
 include_once '_functions/functions.php';
 include_once '_classes/Autoloader.php';
+include_once '_config/db.php';
 Autoloader::register();
 
 
 
 /**
- * strtolower — Renvoie une chaîne en minuscules
- * Retourne string, après avoir converti tous les caractères alphabétiques en minuscules.
+ * strtolower — Renvoi une chaîne en minuscules
+ * Return string, après avoir converts tous les caractères alphabétiques en minuscules.
  * trim — Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
  *
  */
@@ -20,11 +20,19 @@ if (isset($_GET['page']) and !empty($_GET['page'])) {
 } else {
     $page = 'home';
 }
+
+$_SESSION['lang'] = getUserLanguage();
+// debug($_SESSION['lang']);
+
 //Array contenant toutes les pages
 $allPages = scandir('controllers/');
 // var_dump($allPages);
 
 if (in_array($page . '_controller.php', $allPages)) {
+
+    // $lang = getPageLanguage($_SESSION['lang'], ['header',$page,'footer']);
+    // debug($lang);
+
     //Inclusion de la page
     include_once 'models/' . $page . '_model.php';
     include_once 'controllers/' . $page . '_controller.php';
