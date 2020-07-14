@@ -4,9 +4,9 @@
 //       ERRORS DISPLAY        //
 // --------------------------- //
 
-//!\\ A enlever lors du déploiement
-error_reporting(E_ERROR | E_PARSE | E_ALL);
-ini_set('display_errors', true);
+// //!\\ A enlever lors du déploiement
+// error_reporting(E_ERROR | E_PARSE | E_ALL);
+// ini_set('display_errors', true);
 
 
 // --------------------------- //
