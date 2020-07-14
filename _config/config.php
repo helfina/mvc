@@ -4,9 +4,9 @@
 //       ERRORS DISPLAY        //
 // --------------------------- //
 
-//!\\ A enlever lors du déploiement
-error_reporting(E_ERROR | E_PARSE | E_ALL);
-ini_set('display_errors', true);
+// //!\\ A enlever lors du déploiement
+// error_reporting(E_ERROR | E_PARSE | E_ALL);
+// ini_set('display_errors', true);
 
 
 // --------------------------- //
@@ -43,8 +43,9 @@ define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
 define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "mvcbr");
+define("DATABASE_NAME", "bleuetsrose");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD","");
 
-
+//Language
+define("DEFAULT_LANGUAGE", "fr");

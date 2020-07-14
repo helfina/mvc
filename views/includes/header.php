@@ -1,7 +1,7 @@
 <header class="header">
         <!-- ******Logo******* -->
-        <a href="index.html">
-            <img class="logo" src="../../assets/images/logobr.png" alt="logo">
+        <a href="index.php?page=home">
+            <img class="logo" src="assets/images/logobr.jpg" alt="logo">
         </a>
 
         <nav class="menu_" id="Menu">
@@ -23,6 +23,7 @@
                 <li>
                     <a href="index.php?page=contact">Contact</a>
                 </li>
+              
             </ul>
         </nav>
 
