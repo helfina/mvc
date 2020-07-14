@@ -20,27 +20,24 @@
 
     <main class="container">
         
-        <section class="row Boutiques">
-        <!--php foreach($allShop as $index => $allShop) {>-->
+    <section class="row Boutiques">
+            
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
-                <h3><?= $allShop['nom']?></h3>
+                <h3>St-Jean-brevelay</h3>
                 <figure class="row">
-               
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
-                        src="assets\images\devanturestjean.jpg" alt="devanture">
-                        <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
-                        src="<?= $allShop['id_image']?>" alt="devanture">
-                    <figcaption class="row">
-                    
-                        <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
-                        <?= $allShop['rue']?><br>             
-                        <?= $allShop['code_postal'] ?>
-                        <?= $allShop['ville'] ?><br>
-                            <!-- 56660Saint-Jean-Brévelay  -->
-                            <a href="tel:+33297604165">Tel :<?= $allShop['tel'] ?> </a>
 
-                        </address>
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="public\Image\image.png"
+                        alt="devanture">
+
+                   
+                    <figcaption class="row">
                        
+                        <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
+                            2 Rue de buléon<br>
+                            56660 Saint-Jean-Brevelay<br>
+                            <a href="tel:+33297604165"> Tel : 02.97.60.41.65</a>
+                        </address>
+
                         <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
                             <thead>
                                 <tr>
@@ -52,8 +49,8 @@
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
-                                    <td><?= $allShop['horaire'] ?></td>
-                                    <td><?= $allShop['horaire'] ?></td>
+                                    <td>9H30 - 12H</td>
+                                    <td>15H - 19H15</td>
                                 </tr>
                                 <tr>
                                     <td class="day">Mardi</td>
@@ -85,16 +82,16 @@
                                 </tr>
                             </tbody>
                         </table>
+
                     </figcaption>
                 </figure>
             </article>
-            <!--php }?--> 
 
-            <!-- <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
+            <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
                 <h3>Grand-champ</h3>
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets/images/devantureGC.jpg"
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="public\Image\devantureGC.jpg"
                         alt="devanture">
 
                     <figcaption class="row">
@@ -151,7 +148,7 @@
 
                     </figcaption>
                 </figure>
-            </article> -->
+            </article>
 
         </section>
 
