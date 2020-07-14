@@ -35,23 +35,25 @@
         <section class="row Boutiques">
         <?php foreach($allShop as $index => $allShop) {?>
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
-                <h3><?= $allShop['name_shop']?></h3>
+                <h3><?= $allShop['nom']?></h3>
                 <figure class="row">
                
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
-                        src="assets\images\devanturestjean.jpg" alt="devanture">
+                    <!-- <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
+                        src="assets\images\devanturestjean.jpg" alt="devanture"> -->
+                        <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
+                        src="<?= $allShop['id_image']?>" alt="devanture">
                     <figcaption class="row">
-                    <!--<= $allShop['image']?>assets\images\devanturestjean.jpg-->
+                    
                         <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
-                        <?= $allShop['address']?><br>             
-                        <?= $allShop['cp'] ?>
-                        <?= $allShop['city'] ?><br>
+                        <?= $allShop['rue']?><br>             
+                        <?= $allShop['code_postal'] ?>
+                        <?= $allShop['ville'] ?><br>
                             <!-- 56660Saint-Jean-Brévelay  -->
-                            <a href="tel:+33297604165">Tel :<?= $allShop['number'] ?> </a>
+                            <a href="tel:+33297604165">Tel :<?= $allShop['tel'] ?> </a>
 
                         </address>
                        
-                        <!-- <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
+                        <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
                             <thead>
                                 <tr>
                                     <th>
@@ -62,8 +64,8 @@
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
-                                    <td>9H30 - 12H</td>
-                                    <td>15H - 19H15</td>
+                                    <td><?= $allShop['horaire'] ?></td>
+                                    <td><?= $allShop['horaire'] ?></td>
                                 </tr>
                                 <tr>
                                     <td class="day">Mardi</td>
@@ -94,7 +96,7 @@
                                     <td>9H30 - 12H30</td>
                                 </tr>
                             </tbody>
-                        </table> -->
+                        </table>
                     </figcaption>
                 </figure>
             </article>
@@ -316,7 +318,10 @@
     
     <?php include_once 'views/includes/footer.php'?>
 
+    <script src="<?= PATH?>assets/js/header.js" defer></script>
+<script src="<?= PATH?>assets/js/slider.js" defer></script>
 
+<script src="<?= PATH?>assets/js/carousel.js" defer></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -18,7 +18,7 @@
         <h1>Bleuets Rose</h1>
         <section class="row contact">
 
-            <form class="mobile-12 tablette-12 pc-6 col-6" action="" method="post">
+            <form class="mobile-12 tablette-12 pc-6 col-6" action="#" method="post">
                 <fieldset class="row formulaire">
                     <legend class="mobil-12 tablette-12 col-12">
                         Contactez Nous !
@@ -131,6 +131,10 @@
     </main>
     
     <?php include_once 'views/includes/footer.php'?>
+    
+<script src="<?= PATH?>assets/js/auto.js" defer></script>
+<script src="<?= PATH?>assets/js/openstreetmap.js" defer ></script>
+<script src="<?= PATH?>assets/js/contact.js" defer></script>
 </body>
 
 </html>

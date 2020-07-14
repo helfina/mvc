@@ -43,10 +43,5 @@
 
 
 <!-- JS Files -->
-<script src="<?= PATH?>assets/js/header.js"></script>
-<script src="<?= PATH?>assets/js/slider.js"></script>
-<script src="<?= PATH?>assets/js/galerie.js"></script>
-<script src="<?= PATH?>assets/js/carousel.js"></script>
-<script src="<?= PATH?>assets/js/contact.js"></script>
-<script src="/>assets/js/auto.js"></script>
-<script src="/assets/js/openstreetmap.js"></script>
+
+

@@ -5,10 +5,11 @@
 // include_once '_classes/Categories.php';
 // include_once '_classes/Shop.php';
 // $shop = new Shop($id);
-$allShop = Shop::getAllShop();
+$allShop = Magasins::getAllShop();
 $allImages = Images::getAllImages();
 $allCategory = Categories::getAllCategories();
-
+$allAdmin = Admins::getAllAdmin();
+$allHoraire = Horaires::getAllHoraire();
 // debug($allShop);
 // debug($allImages);
 // debug($allCategory);

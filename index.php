@@ -1,11 +1,19 @@
 <?php
+// Démarre une session 
 include_once '_config/config.php';
+
 include_once '_functions/functions.php';
 include_once '_classes/Autoloader.php';
 include_once '_config/db.php';
+//inclusion des classes general
+//autoloader
 Autoloader::register();
 
-
+// echo sha1('password');
+// echo sha1('L*HjBeMREZqB');
+// $var = magasins::getAllImages();
+// debug($var);
+// exit;
 
 /**
  * strtolower — Renvoi une chaîne en minuscules
@@ -15,13 +23,15 @@ Autoloader::register();
  */
 
 //Définition de la page courrante
-if (isset($_GET['page']) and !empty($_GET['page'])) {
+if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
-} else {
+} 
+else {
     $page = 'home';
 }
 
-$_SESSION['lang'] = getUserLanguage();
+
+// $_SESSION['lang'] = getUserLanguage();
 // debug($_SESSION['lang']);
 
 //Array contenant toutes les pages
@@ -37,7 +47,17 @@ if (in_array($page . '_controller.php', $allPages)) {
     include_once 'models/' . $page . '_model.php';
     include_once 'controllers/' . $page . '_controller.php';
     include_once 'views/' . $page . '_view.php';
-} else {
+
+}else{
     //Retour d'une erreur
     echo 'erreur 404';
 }
+
+// //Définition de la page admin
+// if (isset($_GET['admin']) AND !empty($_GET['admin'])) {
+//     $admin = trim(strtolower($_GET['admin']));
+// } 
+// else {
+//     $admin = 'admin';
+    
+// }

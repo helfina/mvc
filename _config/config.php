@@ -43,7 +43,7 @@ define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
 define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "mvcbr");
+define("DATABASE_NAME", "bleuetsrose");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD","");
 

@@ -1,0 +1,14 @@
+{
+    "name": "kerfo/mvc",
+    "description": "pojet bleuets rose",
+    "require-dev": {
+        "phpmailer/phpmailer": "~6.1"
+    },
+    "authors": [
+        {
+            "name": "Helfina",
+            "email": "53316318+helfina@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
