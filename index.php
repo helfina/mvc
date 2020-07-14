@@ -5,8 +5,6 @@ include_once '_functions/functions.php';
 include_once '_classes/Autoloader.php';
 Autoloader::register();
 
-
-
 /**
  * strtolower — Renvoie une chaîne en minuscules
  * Retourne string, après avoir converti tous les caractères alphabétiques en minuscules.
