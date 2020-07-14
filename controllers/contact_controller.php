@@ -57,9 +57,9 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
                 //Server settings
                 $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // Enable verbose debug output
                 $mail->isSMTP();                                            // Send using SMTP
-                $mail->Host = 'georgie.o2switch.net';  // Set the SMTP server to send through
+                $mail->Host = 'imap.gmail.com';  // Set the SMTP server to send through
                 $mail->SMTPAuth = true;  // Enable SMTP authentication
-                $mail->Username = 'gake0333';  // SMTP username
+                $mail->Username = 'contact@gaelle-kfe.com';  // SMTP username
                 $mail->Password = '538e738a9a27f916d4443e6c127eeed2f13571d7';  // SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
                 $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
@@ -68,7 +68,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
                 $mail->setFrom($email ,  '<br>' .$nom . '<br>'. $prenom);
                
                 // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-                $mail->addAddress('contact@gaelle-kfe.com');               // Name is optional
+                $mail->addAddress('matheoalban@gmail.com');               // Name is optional
                 // $mail->addReplyTo('info@example.com', 'Information');
                 // $mail->addCC('cc@example.com');
                 // $mail->addBCC('bcc@example.com');

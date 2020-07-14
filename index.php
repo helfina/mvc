@@ -10,7 +10,7 @@ include_once '_config/db.php';
 Autoloader::register();
 
 // echo sha1('password');
-// echo sha1('L*HjBeMREZqB');
+
 // $var = magasins::getAllImages();
 // debug($var);
 // exit;
