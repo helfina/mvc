@@ -4,9 +4,14 @@ class Horaires
 {
 
 public $id;
-public $open_start;
-public $open_end;
 public $id_shop;
+public $jour;
+public $matinOpen;
+public $matinClose;
+public $AmidiOpen;
+public $AmidiClose;
+
+
 /**
  * Shop constructor .
  *(prepare + execute permette dempecher les injection sql + str_secur)
@@ -24,9 +29,12 @@ function __construct($id)
     $data = $reqHoraire->fetch();
 
     $this->id = $id;
-    $this->open_start = $data['open_start'];
-    $this->open_end = $data['open_end'];
     $this->id_shop = $data['id_shop'];  
+    $this->jour = $data['jour'];
+    $this->matinOpen = $data['matinOpen'];
+    $this->matinClose = $data['matinClose'];
+    $this->AmidiOpen = $data['AmidiOpen'];
+    $this->AmidiClose = $data['AmidiClose'];
 }
 
 

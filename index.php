@@ -4,15 +4,27 @@ include_once '_config/config.php';
 include_once '_functions/functions.php';
 include_once '_classes/Autoloader.php';
 include_once '_config/db.php';
-//inclusion des classes general
 //autoloader
 Autoloader::register();
-
+//inclusion des classes general
+include_once '_classes/Admins.php';
+include_once '_classes/Articles.php';
+include_once '_classes/Categories.php';
+include_once '_classes/Horaires.php';
+include_once '_classes/Images.php';
+include_once '_classes/Magasins.php';
 // echo sha1('password');
 
-// $var = magasins::getAllImages();
+//  $var = new Horaires(1);
+// $var = new Magasins(1);
+// $var =  new Admins(2);
+// $var = Admins::getAllAdmin();
+// $var = Magasins::getShopGrandChamp();
+// $var = Horaires::getHoraireGrandChamp();
 // debug($var);
 // exit;
+
+
 
 /**
  * strtolower — Renvoi une chaîne en minuscules
@@ -24,7 +36,10 @@ Autoloader::register();
 //Définition de la page courrante
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
-} 
+    debug($page);
+exit;
+  
+}
 else {
     $page = 'home';
 }

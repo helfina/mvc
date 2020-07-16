@@ -8,6 +8,7 @@ public $name_shop;
 public $address;
 public $cp;
 public $city;
+public $tel;
 public $id_category;
 public $id_image;
 public $id_horaire;
@@ -23,17 +24,18 @@ function __construct($id)
 
     $id = str_secur($id);
 
-    $reqShop = $db->prepare('SELECT * FROM shop  WHERE id = ?');
+    $reqShop = $db->prepare('SELECT * FROM `magasins`  WHERE id = ?');
     $reqShop->execute([$id]);
     $data = $reqShop->fetch();
 
     $this->id = $id;
-    $this->name_shop = $data['nom'];
+    $this->nom = $data['nom'];
     $this->address = $data['rue'];
     $this->cp = $data['code_postal'];
     $this->city = $data['ville'];
+    $this->tel = $data['tel'];
     $this->id_horaire = $data['id_horaire']; 
-    $this->id_image = $data['image']; 
+    $this->id_image = $data['id_image']; 
     $this->id_category = $data['id_category'];  
 }
 
@@ -45,7 +47,7 @@ function __construct($id)
   */
  static function getAllShop(){
      global $db;
-     $reqShop = $db->prepare('SELECT `magasins`.*, `horaires`.*, `images`.`image` FROM `magasins` LEFT JOIN `horaires` ON `horaires`.`id_shop` = `magasins`.`id` LEFT JOIN `images` ON `images`.`id_shop`= `magasins`.`id` WHERE `magasins`.`id`');
+     $reqShop = $db->prepare('SELECT `magasins`.*, `horaires`.* , `images`.`image` FROM `magasins` LEFT JOIN `horaires` ON `horaires`.`id_shop` = `magasins`.`id` LEFT JOIN `images` ON `images`.`id_shop`= `magasins`.`id`');
      $reqShop->execute([]);
      return $reqShop->fetchAll();
  }

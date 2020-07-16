@@ -21,22 +21,32 @@
     <main class="container">
         
     <section class="row Boutiques">
-            
+          
+
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
+            
+         
                 <h3>St-Jean-brevelay</h3>
+          
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="public\Image\image.png"
-                        alt="devanture">
-
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="assets\images\devanturestjean.jpg"
+                        alt="devanture magasins de st jean brevelay">
+                       
                    
                     <figcaption class="row">
                        
                         <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
-                            2 Rue de buléon<br>
-                            56660 Saint-Jean-Brevelay<br>
-                            <a href="tel:+33297604165"> Tel : 02.97.60.41.65</a>
-                        </address>
+                        
+                             2 Rue de buléon<br>
+                            56660 Saint-Jean-Brevelay<br> 
+
+                          
+
+                            <a href="tel:+33297604165">Tel : 02.97.60.41.65><br> </a>
+                        </address>  
+
+                       
 
                         <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
                             <thead>
@@ -49,7 +59,7 @@
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
-                                    <td>9H30 - 12H</td>
+                                    <td>9H30 - 12H </td>
                                     <td>15H - 19H15</td>
                                 </tr>
                                 <tr>
@@ -83,15 +93,19 @@
                             </tbody>
                         </table>
 
+                   
+
                     </figcaption>
                 </figure>
             </article>
 
+                     
+        
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
                 <h3>Grand-champ</h3>
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="public\Image\devantureGC.jpg"
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets\images\devantureGC.jpg"
                         alt="devanture">
 
                     <figcaption class="row">
@@ -148,7 +162,7 @@
 
                     </figcaption>
                 </figure>
-            </article>
+            </article> 
 
         </section>
 
@@ -160,17 +174,20 @@
 
                 <div class="row blockOne">
 
-
+             
                     <figure class="pc-2 l-3 col-3 item">
                         <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
                         <figcaption class="col-12 item__body">
                             <h3 class="item__title">Titre 1</h3>
-                            <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
+                            <p class="item__description"><?= $article['content']?>
+                                <!-- Description de l'image Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Deleniti, odit eligendi. Expedita quisquam tempore nihil fuga, quia
-                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut?
+                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut? -->
                             </p>
                         </figcaption>
                     </figure>
+           
+
                     <figure class="pc-2 l-3 col-3 item">
                         <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
                         <figcaption class="item__body">

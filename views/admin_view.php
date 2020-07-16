@@ -53,7 +53,8 @@
             <h2>Ancien poste</h2>
             <table>
 
-            <?php foreach($allArticle as $index => $allArticle) {?>
+            <?php 
+            foreach($allArticle as $index => $allArticle) : ?>
 
                 <tr>
                     <td><?= $allArticle['title']?></td>
@@ -64,7 +65,7 @@
                     <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
                 </tr>
 
-                <?php }?> 
+            <?php endforeach; ?> 
 
                 <tr>
                     <td>un titre</td>
