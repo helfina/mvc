@@ -13,7 +13,7 @@
     <?php include_once 'views/includes/header.php'?>
 
     <p class="ariane">
-        <a href="index.html">Accueil > </a> Galerie
+        <a href="index.php?page=home">Accueil > </a> Galerie
     </p>
     <h1>Galerie</h1>
     <main class="container">

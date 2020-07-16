@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
 
-    <?php include_once '/views/includes/head.php'?>
+    <?php include_once 'views/includes/head.php'?>
 
     <title><?= ucfirst($page) ?></title>
 </head>
 
 <body>
 
-    <?php include_once __DIR__ . '/views/includes/header.php'?>
+    <?php include_once 'views/includes/header.php'?>
 
     <main class="dasboard">
         <section class="sidebar">
@@ -22,11 +22,12 @@
             <nav class="navAdmin">
                <h3>Vos collabotrateur</h3>
 
-               <?php foreach($allAuthors as  $allAuthor) {?>
+               <?php 
+               
+               foreach($allAdmin as  $allAdmin => $admin) {?>
             <ul>
-                <li><?= $allAuthor['firstname']?></li>
-                <li>admin</li>
-                <li>employé</li>
+                <li><?= $admin['firstname'] .' '. $admin['lastname']?></li>
+             
             </ul> 
             <?php }?> 
             </nav>
@@ -38,48 +39,54 @@
         <h1>Bienvenue dans votre espace Admin</h1>
 
         <div class="post_article">
-            <form method="post" action="admin.php" enctype="multipart/form-data">
+
+            <form method="post" action="" enctype="multipart/form-data">
+
                 <fieldset>
                     <legend>Nouvel Article</legend>
                     <input type="text" name="titre" placeholder="titre du post/img">
                     <textarea name="content" placeholder="ecrivez votre texte"></textarea>
                     <input type="file" name="img" placeholder="charger l'image">
                 </fieldset>
-                <button type="submit" name="Envoie">Publier</button>
+                <button type="submit" name="Envoyer">Publier</button>
             </form>
+
         </div>
+
+        <?php
+         Admins::transfert();
+
+         if ( isset($_FILES['fic']) )
+         {
+             Admins::transfert();
+         }
+      ?>
+        <h3>Envoi d'une image</h3>
+      <form enctype="multipart/form-data" action="#" method="post">
+         <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
+         <input type="file" name="fic" size=50 />
+         <input type="submit" value="Envoyer" />
+      </form>
 
         <div class="ancien_post">
             <h2>Ancien poste</h2>
             <table>
 
-            <?php foreach($allArticle as $index => $allArticle) {?>
+            <?php 
+            foreach($allArticle as $index => $article) : ?>
 
                 <tr>
-                    <td><?= $allArticle['title']?></td>
-                    <td><?= $allArticle['sentence']?></td>
-                    <td><?= $allArticle['content']?></td>
-                    <td><?= $allArticle['image']?></td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
+                    <td><?= $article['title']?></td>
+                    <td><?= $article['sentence']?></td>
+                    <td><?= $article['content']?></td>
+                    <td><?= $article['id_image']?></td>
+                    <td><a href="index.php?page=modifier"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
+                    <td><a href="index.php?page=supprimer"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
                 </tr>
 
-                <?php }?> 
+            <?php endforeach; ?> 
 
-                <tr>
-                    <td>un titre</td>
-                    <td>content</td>
-                    <td>image</td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
-                </tr>
-                <tr>
-                    <td>un titre</td>
-                    <td>content</td>
-                    <td>image</td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
-                </tr>
+            
 
             </table>
         </div>

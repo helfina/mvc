@@ -1,16 +1,16 @@
-<?php
+<?php 
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+
+use  PHPMailer \ PHPMailer \ PHPMailer ;
+use  PHPMailer \ PHPMailer \ SMTP ;
+use PHPMailer \ PHPMailer \ Exception ;
 
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
-
 if(!empty ($_POST)&& isset ($_POST['contactSend'])){
-
+    
     if(
         isset($_POST['nom']) 
         && isset($_POST['prenom']) 
@@ -23,8 +23,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
         && isset($_POST['msg']))
         {
 
-    if(
-        !empty($_POST['nom']) 
+    if(!empty($_POST['nom']) 
         && !empty($_POST['prenom']) 
         && !empty($_POST['cp']) 
         && !empty($_POST['ville']) 
@@ -33,7 +32,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
         && !empty($_POST['email']) 
         && !empty($_POST['objet']) 
         && !empty($_POST['msg']))
-        {
+        {try{
             $nom = str_secur($_POST['nom']);
             $prenom = str_secur($_POST['prenom']);
             $cp = str_secur($_POST['cp']);
@@ -44,53 +43,32 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
             $objet = str_secur($_POST['objet']);
             $msg = str_secur($_POST['msg']);
 
-            // Instantiation and passing `true` enables exceptions
-                $mail = new PHPMailer(true);
-
-
-            // $message = '- message envoyer par: ' . $nom . '' .  $prenom .'<br>'. $cp .'<br>'. $ville .'<br>' .$adresse .'<br>'. $tel .'<br>'. $adresse .'<br>'. $mail . ':' . '<br>' . $objet . '<br>' . $msg;
-            // debug($message);
+         
+            $message = '- message envoyer par: ' . '<br>'. $nom . '<br>' .  $prenom .'<br>'. $cp .'<br>'. $ville .'<br>' .$adresse .'<br>'. $tel .'<br>'. $adresse .'<br>'. $email . ':' . '<br>' . $objet . '<br>' . $msg;
+            debug($message);
             // exit;
-            // //ENVOYER UN EMAIL
-            // mail('maboitemaldemonsite@gmail.com', 'On me contact sur mon site',$message);
-            try {
-                //Server settings
-                $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // Enable verbose debug output
-                $mail->isSMTP();                                            // Send using SMTP
-                $mail->Host = 'imap.gmail.com';  // Set the SMTP server to send through
-                $mail->SMTPAuth = true;  // Enable SMTP authentication
-                $mail->Username = 'contact@gaelle-kfe.com';  // SMTP username
-                $mail->Password = '538e738a9a27f916d4443e6c127eeed2f13571d7';  // SMTP password
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-                $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-            
-                //Recipients
-                $mail->setFrom($email ,  '<br>' .$nom . '<br>'. $prenom);
-               
-                // $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-                $mail->addAddress('matheoalban@gmail.com');               // Name is optional
-                // $mail->addReplyTo('info@example.com', 'Information');
-                // $mail->addCC('cc@example.com');
-                // $mail->addBCC('bcc@example.com');
-            
-                // Attachments
-                // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-            
-                // Content
-                $mail->isHTML(true);                                  // Set email format to HTML
-                $mail->Subject = $objet;
-                $mail->Body    = $msg;
-                $mail->AltBody = $msg;
-               
-                $mail->send();
-                echo 'Message has been sent';
-            } catch (Exception $e) {
 
-                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}"; 
-                debug($mail->ErrorInfo);
-                exit;
-            }
+            //ENVOYER UN EMAIL
+            // mail('gkerforne@gmail.com', 'On me contact sur mon site',$message);   
+            // Instantiation and passing `true` enables exceptions
+            $mail = new PHPMailer(true);
+            Contact::SmtpConex($mail);    
+            //Recipients
+            $mail->setFrom($email, $nom . ' ' . $prenom);
+
+            $mail->addAddress('gake0333@georgie.o2switch.net', 'Joe User');     // Add a recipient
+                
+            $mail->Subject = $objet;
+            $mail->Body = $message;
+            $mail->send();
+            echo 'Message has been sent';
+
+            }catch(Exception $e){
+                
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+           
+    
         }else{
             $error = "Veuillez remplir tous les champs!";
         }
@@ -99,4 +77,6 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
 
             $error = "Une erreur s'est produite, veuillez réesayez!";
         }
+       
 }
+    
