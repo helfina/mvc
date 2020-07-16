@@ -5,8 +5,8 @@
 // --------------------------- //
 
 // //!\\ A enlever lors du déploiement
-// error_reporting(E_ERROR | E_PARSE | E_ALL);
-// ini_set('display_errors', true);
+error_reporting(E_ERROR | E_PARSE | E_ALL);
+ini_set('display_errors', true);
 
 
 // --------------------------- //
@@ -49,3 +49,10 @@ define("DATABASE_PASSWORD","");
 
 //Language
 define("DEFAULT_LANGUAGE", "fr");
+
+//SMTP Connexion
+
+define("SMTP_HOST", "georgie.o2switch.net");
+define("SMTP_USER", "gake0333");
+define("SMTP_PASS", "L*HjBeMREZqB");
+define("SMTP_PORT", 587);

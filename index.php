@@ -1,5 +1,5 @@
 <?php
-
+echo sha1('L*HjBeMREZqB');
 // Inclusion des fichiers principaux
 include_once '_config/config.php';
 include_once '_functions/functions.php';

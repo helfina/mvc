@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 class Admins
 {
     //les proprieter de la classe
         public $id;
-        public $log;
-        public $pass;
+        public $login;
+        public $password;
         public $fisrtname;
         public $lastname;
         public $id_article;
@@ -22,13 +22,13 @@ function __construct($id)
 
     $id = str_secur($id);
 
-    $reqAdmin = $db->prepare('SELECT * FROM admins  WHERE id = ?');
+    $reqAdmin = $db->prepare('SELECT * FROM admin  WHERE id = ?');
     $reqAdmin->execute([$id]);
     $data = $reqAdmin->fetch();
 
     $this->id = $id;
-    $this->log = $data['log'];
-    $this->pass = $data['pass'];
+    $this->login = $data['login'];
+    $this->password = $data['password'];
     $this->firstname = $data['firstname'];    
     $this->lastname = $data['lastname'];
     $this->id_article = $data['id_article'];
@@ -50,22 +50,6 @@ function __construct($id)
      return $reqAdmin->fetchAll();
  } 
 
-/**
- * Vérification que le fichier est bien sur le serveur ;
- * Vérification que l'image ne dépasse pas la taille maximum fixée ;
- *
- * @return void
- */
+
 
 }
-
-$allAdmin = Admins::getAllAdmin();
-$allshop = Magasins::getAllShop();
-$allArticle = Articles::getAllArticles();
-$allCategory = Categories::getAllCategories();
-$allImage = Images::getAllImages();
-
-
-
- 
-
