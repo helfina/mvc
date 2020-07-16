@@ -52,7 +52,7 @@ define("DEFAULT_LANGUAGE", "fr");
 
 //SMTP Connexion
 
-define("SMTP_HOST", "georgie.o2switch.net");
-define("SMTP_USER", "gake0333");
-define("SMTP_PASS", "L*HjBeMREZqB");
-define("SMTP_PORT", 587);
+define("SMTP_HOST", "");
+define("SMTP_USER", "");
+define("SMTP_PASS", "");
+define("SMTP_PORT", );
