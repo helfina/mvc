@@ -22,8 +22,8 @@
                 <aside class="logo_partenaire">
                     <a
                         href="https://www.florajet.com/?opm=3909&gclid=CjwKCAjwg6b0BRBMEiwANd1_SPg7DdaLB_SJu-VaEzkYDLAB62_t6s8l_-IoQwVMDiMID1dVFv1SMRoCD_sQAvD_BwE"><img
-                            src="public\Image\logo_partenaire.png" alt="Florajet"></a>
-                    <a href="https://www.123fleurs.com/"><img src="public\Image\logo-partenaire123.jpg"
+                            src="assets/images/logo_partenaire.png" alt="Florajet"></a>
+                    <a href="https://www.123fleurs.com/"><img src="assets/images/logo-partenaire123.jpg"
                             alt="123 Fleurs"></a>
 
                 </aside>

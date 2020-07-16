@@ -4,9 +4,11 @@ class Articles
     public $id;
     public $title;
     public $sentence;
+    public $content;
     public $date;
-    public $author;
-    public $category;
+    public $id_admin;
+    public $id_category;
+    public $id_image;
 
     function __construct($id)
     {
@@ -14,12 +16,12 @@ class Articles
 
         $id = str_secur($id);
 
-        $reqArticle = $db->prepare('
-        SELECT a.*, au.firstname, au.lastname, c.name AS category
-        FROM articles a
-        INNER JOIN authors au  ON au.id = a.author_id
-        INNER JOIN categories c ON c.id = a.categories_id
-        WHERE a.id = ?
+        $reqArticle = $db->prepare('SELECT `articles`.*, `images`.`image`, `categories`.`nom`, `admins`.`firstname`
+        FROM `articles` 
+            LEFT JOIN `images` ON `images`.`id_article` = `articles`.`id` 
+            LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id` 
+            LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id`
+        WHERE `articles`.`id` = ?
         
         ');
 
@@ -27,18 +29,21 @@ class Articles
         $data = $reqArticle->fetch();
         $this->id = $id;
         $this->title = $data['title'];
-        $this->content = $data['content'];
         $this->sentence = $data['sentence'];
+        $this->content = $data['content'];
         $this->date = $data['date'];
-        $this->author = $data['firstname'] . '' . $data['lastname'];
-        $this->category = $data['category'];
+        $this->id_admin = $data['id_admin'];
+        $this->id_category = $data['id_category'];
+        $this->id_image = $data['id_image'];
+
+
         
     }
 
 
         
     /**
-     * getAllArticles Envoie tous les articles
+     * getAllArticles Envois tous les articles
      *
      * @return void
      */
@@ -46,27 +51,21 @@ class Articles
 
             global $db;
 
-            $reqArticle = $db->prepare('
-            SELECT a.*, au.firstname, au.lastname, c.name AS category
-            FROM articles a
-            INNER JOIN authors au  ON au.id = a.author_id
-            INNER JOIN categories c ON c.id = a.category_id
-
+            $reqArticle = $db->prepare('SELECT `articles`.*, `images`.`image`, `categories`.`nom`, `admins`.`firstname`
+            FROM `articles` 
+                LEFT JOIN `images` ON `images`.`id_article` = `articles`.`id` 
+                LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id` 
+                LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id`;`
             ');
             $reqArticle->execute([]);
             return $reqArticle->fetchAll();
     }
+    
     static function getLastArticles(){
 
         global $db;
 
-        $reqArticle = $db->prepare('
-        SELECT a.*, au.firstname, au.lastname, c.name AS category
-        FROM articles a
-        INNER JOIN authors au  ON au.id = a.author_id
-        INNER JOIN categories c ON c.id = a.category_id
-        ORDER BY DESC
-        LIMIT 1
+        $reqArticle = $db->prepare('SELECT `articles`.*, `images`.`id_article`, `admins`.`id_article`, `categories`.* FROM `articles` LEFT JOIN `images` ON `images`.`id_article` = `articles`.`id` LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id` ORDER BY `articles`.`id` DESC LIMIT 0, 25
         ');
         $reqArticle->execute([]);
         return $reqArticle->fetchAll();

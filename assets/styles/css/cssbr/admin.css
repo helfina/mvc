@@ -1,0 +1,49 @@
+main.dasboard {
+    display: flex;
+    font-size: medium;
+}
+.sidebar{
+background-color: silver;
+width: 20%;
+height: 500px;
+}
+.article{
+    width: 100%;
+    margin: 10px;
+}
+.article h1{
+    text-align: center;
+}
+.post_article{
+    width: 90%;
+}
+.post_article form fieldset {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.post_article form fieldset legend{
+    padding: 5px;
+    text-align: center;
+}
+.post_article form fieldset input,
+.post_article form fieldset textarea{
+    width: 90%;
+    margin: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+.ancien_post{
+    width: 90%;
+}
+.ancien_post table{
+    width: 100%;
+    height: auto;
+    border: 4px double red;
+}
+.ancien_post a{
+    background-color: black;
+}
+.ancien_post a{
+    margin-left: 90.208333%; /* 1732px/1920 */
+}

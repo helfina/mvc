@@ -12,46 +12,43 @@
 
     <?php include_once 'views/includes/header.php'?>
 
-    <figure class="slider" id="slider">
+    <div class="slider" id="slider">
         <img class="img-resp" id="slide" src="/assets/images/slider/compofleurrose.jpg" alt="fleure rose">
-        <figcaption>
-            <div class="precedent" onclick=" ChangeSlide (-1) ">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" whidth="50px" height="50px">
-                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                    <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
-            </div>
-            <div class="suivant" onclick=" ChangeSlide (1) "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    fill="white" whidth="50px" height="50px">
-                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-                    <path d="M0 0h24v24H0z" fill="none" /></svg></div>
-        </figcaption>
-    </figure>
+    </div>
 
     <h1>Bleuets Rose</h1>
 
     <main class="container">
         
-        <section class="row Boutiques">
-        <?php foreach($allShop as $index => $allShop) {?>
-            <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
-                <h3><?= $allShop['name_shop']?></h3>
-                <figure class="row">
-               
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg"
-                        src="assets\images\devanturestjean.jpg" alt="devanture">
-                    <figcaption class="row">
-                    <!--<= $allShop['image']?>assets\images\devanturestjean.jpg-->
-                        <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
-                        <?= $allShop['address']?><br>             
-                        <?= $allShop['cp'] ?>
-                        <?= $allShop['city'] ?><br>
-                            <!-- 56660Saint-Jean-Brévelay  -->
-                            <a href="tel:+33297604165">Tel :<?= $allShop['number'] ?> </a>
+    <section class="row Boutiques">
+          
 
-                        </address>
+            <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
+            
+         
+                <h3>St-Jean-brevelay</h3>
+          
+                <figure class="row">
+
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="assets\images\devanturestjean.jpg"
+                        alt="devanture magasins de st jean brevelay">
                        
-                        <!-- <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
+                   
+                    <figcaption class="row">
+                       
+                        <address class="mobile-12 tablette-12 pc-12 l-12 col-12 adresse">
+                        
+                             2 Rue de buléon<br>
+                            56660 Saint-Jean-Brevelay<br> 
+
+                          
+
+                            <a href="tel:+33297604165">Tel : 02.97.60.41.65</a>
+                        </address>  
+
+                       
+
+                        <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
                             <thead>
                                 <tr>
                                     <th>
@@ -62,7 +59,7 @@
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
-                                    <td>9H30 - 12H</td>
+                                    <td>9H30 - 12H </td>
                                     <td>15H - 19H15</td>
                                 </tr>
                                 <tr>
@@ -94,17 +91,21 @@
                                     <td>9H30 - 12H30</td>
                                 </tr>
                             </tbody>
-                        </table> -->
+                        </table>
+
+                   
+
                     </figcaption>
                 </figure>
             </article>
-            <?php }?> 
 
-            <!-- <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
+                     
+        
+            <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
                 <h3>Grand-champ</h3>
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets/images/devantureGC.jpg"
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets\images\devantureGC.jpg"
                         alt="devanture">
 
                     <figcaption class="row">
@@ -161,7 +162,7 @@
 
                     </figcaption>
                 </figure>
-            </article> -->
+            </article> 
 
         </section>
 
@@ -173,17 +174,20 @@
 
                 <div class="row blockOne">
 
-
+             
                     <figure class="pc-2 l-3 col-3 item">
                         <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
                         <figcaption class="col-12 item__body">
                             <h3 class="item__title">Titre 1</h3>
-                            <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
+                            <p class="item__description"><?= $article['content']?>
+                                <!-- Description de l'image Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Deleniti, odit eligendi. Expedita quisquam tempore nihil fuga, quia
-                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut?
+                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut? -->
                             </p>
                         </figcaption>
                     </figure>
+           
+
                     <figure class="pc-2 l-3 col-3 item">
                         <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
                         <figcaption class="item__body">
@@ -316,7 +320,10 @@
     
     <?php include_once 'views/includes/footer.php'?>
 
+    <script src="<?= PATH?>assets/js/header.js" defer></script>
+<script src="<?= PATH?>assets/js/slider.js" defer></script>
 
+<script src="<?= PATH?>assets/js/carousel.js" defer></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -11,13 +11,16 @@
     
 <?php include_once 'views/includes/header.php'?>
     <p class="ariane">
-        <a href="index.html">Accueil > </a><a href="galerie.html">Galerie > </a> Contact
+        <a href="index.php?page=home">Accueil > </a><a href="index.php?page=galerie">Galerie > </a> Contact
     </p>
 
     <main class="container pageContact">
         <h1>Bleuets Rose</h1>
         <section class="row contact">
-
+        
+        <?php if (!empty($msg)) {
+    echo "<h2>$msg</h2>";
+} ?>
             <form class="mobile-12 tablette-12 pc-6 col-6" action="" method="post">
                 <fieldset class="row formulaire">
                     <legend class="mobil-12 tablette-12 col-12">
@@ -131,6 +134,10 @@
     </main>
     
     <?php include_once 'views/includes/footer.php'?>
+    
+<script src="<?= PATH?>assets/js/auto.js" defer></script>
+<script src="<?= PATH?>assets/js/openstreetmap.js" defer ></script>
+<script src="<?= PATH?>assets/js/contact.js" defer></script>
 </body>
 
 </html>
