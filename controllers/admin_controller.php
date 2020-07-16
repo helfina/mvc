@@ -53,3 +53,9 @@ function __construct($id)
 
 
 }
+
+$allAdmin = Admins::getAllAdmin();
+$shop = Magasins::getAllShop();
+$allArticle = Articles::getAllArticles();
+$allCategory = Categories::getAllCategories();
+$allImage = Images::getAllImages();

@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
 
-    <?php include_once '/views/includes/head.php'?>
+    <?php include_once 'views/includes/head.php'?>
 
     <title><?= ucfirst($page) ?></title>
 </head>
 
 <body>
 
-    <?php include_once __DIR__ . '/views/includes/header.php'?>
+    <?php include_once 'views/includes/header.php'?>
 
     <main class="dasboard">
         <section class="sidebar">
@@ -22,11 +22,12 @@
             <nav class="navAdmin">
                <h3>Vos collabotrateur</h3>
 
-               <?php foreach($allAuthors as  $allAuthor) {?>
+               <?php 
+               
+               foreach($allAdmin as  $allAdmin => $admin) {?>
             <ul>
-                <li><?= $allAuthor['firstname']?></li>
-                <li>admin</li>
-                <li>employé</li>
+                <li><?= $admin['firstname'] .' '. $admin['lastname']?></li>
+             
             </ul> 
             <?php }?> 
             </nav>
@@ -54,33 +55,20 @@
             <table>
 
             <?php 
-            foreach($allArticle as $index => $allArticle) : ?>
+            foreach($allArticle as $index => $article) : ?>
 
                 <tr>
-                    <td><?= $allArticle['title']?></td>
-                    <td><?= $allArticle['sentence']?></td>
-                    <td><?= $allArticle['content']?></td>
-                    <td><?= $allArticle['image']?></td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
+                    <td><?= $article['title']?></td>
+                    <td><?= $article['sentence']?></td>
+                    <td><?= $article['content']?></td>
+                    <td><?= $article['id_image']?></td>
+                    <td><a href="index.php?page=modifier"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
+                    <td><a href="index.php?page=supprimer"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
                 </tr>
 
             <?php endforeach; ?> 
 
-                <tr>
-                    <td>un titre</td>
-                    <td>content</td>
-                    <td>image</td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
-                </tr>
-                <tr>
-                    <td>un titre</td>
-                    <td>content</td>
-                    <td>image</td>
-                    <td><a href="#"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
-                    <td><a href="#"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
-                </tr>
+            
 
             </table>
         </div>
