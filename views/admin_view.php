@@ -39,16 +39,34 @@
         <h1>Bienvenue dans votre espace Admin</h1>
 
         <div class="post_article">
-            <form method="post" action="admin.php" enctype="multipart/form-data">
+
+            <form method="post" action="" enctype="multipart/form-data">
+
                 <fieldset>
                     <legend>Nouvel Article</legend>
                     <input type="text" name="titre" placeholder="titre du post/img">
                     <textarea name="content" placeholder="ecrivez votre texte"></textarea>
                     <input type="file" name="img" placeholder="charger l'image">
                 </fieldset>
-                <button type="submit" name="Envoie">Publier</button>
+                <button type="submit" name="Envoyer">Publier</button>
             </form>
+
         </div>
+
+        <?php
+         Admins::transfert();
+
+         if ( isset($_FILES['fic']) )
+         {
+             Admins::transfert();
+         }
+      ?>
+        <h3>Envoi d'une image</h3>
+      <form enctype="multipart/form-data" action="#" method="post">
+         <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
+         <input type="file" name="fic" size=50 />
+         <input type="submit" value="Envoyer" />
+      </form>
 
         <div class="ancien_post">
             <h2>Ancien poste</h2>

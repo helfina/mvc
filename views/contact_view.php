@@ -11,7 +11,7 @@
     
 <?php include_once 'views/includes/header.php'?>
     <p class="ariane">
-        <a href="index.html">Accueil > </a><a href="galerie.html">Galerie > </a> Contact
+        <a href="index.php?page=home">Accueil > </a><a href="index.php?page=galerie">Galerie > </a> Contact
     </p>
 
     <main class="container pageContact">

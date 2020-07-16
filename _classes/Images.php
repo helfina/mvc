@@ -33,7 +33,10 @@ class Images
         $reqImages = $db->prepare("SELECT * FROM `images`");
         $reqImages->execute([]);
         return $reqImages->fetchAll();
-    }  
-   
+    } 
+     
+    function tranfertImage(){
+     
+    }
 }
 
