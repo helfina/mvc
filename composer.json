@@ -1,8 +1,6 @@
 {
     "name": "kerfo/mvc",
     "description": "pojet bleuets rose",
-    "require-dev": {
-    },
     "authors": [
         {
             "name": "Helfina",
