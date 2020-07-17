@@ -57,4 +57,6 @@ define("SMTP_USER", $_ENV["SMTP_USER"]);
 define("SMTP_PASS", $_ENV["SMTP_PASS"]);
 define("SMTP_PORT", $_ENV["SMTP_PORT"]);
 
+// addAdress contact form
+define("CONTACT_ADD", $_ENV["CONTACT_ADD"]);
 

@@ -56,7 +56,7 @@
         
         <h3>Envoi d'une image</h3>
         
-      <form  action="#" method="post">
+      <form  action="" method="post">
 
       <label>Liens de l'images</label>
          <input type="file" name="image" enctype=""/>

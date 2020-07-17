@@ -17,6 +17,10 @@ date_default_timezone_set('Etc/UTC');
 
 class Contact extends PHPMailer{
 
+
+
+
+
     static function smtpCheck(){
 
         //Create a new SMTP instance
@@ -64,7 +68,8 @@ class Contact extends PHPMailer{
         $smtp->quit();
    }
 
-   static function SmtpConex($mail){
+  static function SmtpConex($mail)
+  {
        //Server settings
        $mail->SMTPDebug = SMTP::DEBUG_SERVER;   // Enable verbose debug output
        $mail->isSMTP();  // Send using SMTP
@@ -73,7 +78,7 @@ class Contact extends PHPMailer{
        $mail->Username   = SMTP_USER;   // SMTP username
        $mail->Password   = SMTP_PASS; // SMTP password
        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-       $mail->Port  = SMTP_PORT;  // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+       $mail->Port  = SMTP_PORT;  // TCP port to connect to, use 465 for PHPMailer::ENCRYPTION_SMTPS` above
 
    }
 
