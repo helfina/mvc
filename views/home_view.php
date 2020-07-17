@@ -286,7 +286,7 @@
 
                     <div class="fb-page"
                         data-href="https://www.facebook.com/Bleuets-Rose-1387935727888771/?ref=page_internal&amp;path=%2FBleuets-Rose-1387935727888771%2F"
-                        data-tabs="timeline " data-width="500" data-height="auto" data-small-header="true"
+                        data-tabs="timeline " data-width="500" data-height="500" data-small-header="true"
                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
                         <blockquote
                             cite="https://www.facebook.com/Bleuets-Rose-1387935727888771/?ref=page_internal&amp;path=%2FBleuets-Rose-1387935727888771%2F"
@@ -303,7 +303,7 @@
                     </script>
 
                     <div class="fb-page" data-href="https://www.facebook.com/Bleuets-Rose-Grand-Champ-109237984089867"
-                        data-tabs="timeline " data-width="500" data-height="auto" data-small-header="true"
+                        data-tabs="timeline " data-width="500" data-height="500" data-small-header="true"
                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
                         <blockquote cite="https://www.facebook.com/Bleuets-Rose-Grand-Champ-109237984089867"
                             class="fb-xfbml-parse-ignore"><a

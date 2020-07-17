@@ -89,4 +89,7 @@
 .Galerie figcaption.item__body {
     display: none;
 }
+section.container.Actu {
+    margin-top: 28%;
+}
 }
