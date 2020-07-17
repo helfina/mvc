@@ -50,11 +50,10 @@ function __construct($id)
      return $reqAdmin->fetchAll();
  } 
 
-/**
- * Vérification que le fichier est bien sur le serveur ;
- * Vérification que l'image ne dépasse pas la taille maximum fixée ;
- *
- * @return void
- */
+static function create(){}
+static function delete(){}
+static function update(){}
+
+
 
 }

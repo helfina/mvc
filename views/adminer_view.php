@@ -55,10 +55,12 @@
 
         
         <h3>Envoi d'une image</h3>
-      <form enctype="multipart/form-data" action="#" method="post">
-         <input type="hidden" name="MAX_FILE_SIZE" value="250000" />
-         <input type="file" name="fic" size=50 />
-         <input type="submit" value="Envoyer" />
+        
+      <form  action="#" method="post">
+
+      <label>Liens de l'images</label>
+         <input type="file" name="image" enctype=""/>
+         <input type="submit" value="Envoyer Images" />
       </form>
 
         <div class="ancien_post">
@@ -72,7 +74,7 @@
                     <td><?= $article['title']?></td>
                     <td><?= $article['sentence']?></td>
                     <td><?= $article['content']?></td>
-                    <td><?= $article['id_image']?></td>
+                    <td><?= $article['image']?></td>
                     <td><a href="index.php?page=modifier"><i class="fas fa-pencil-alt"></i></a> Modifier</td>
                     <td><a href="index.php?page=supprimer"><i class="fas fa-trash-alt"></i></a> Supprimer</td>
                 </tr>

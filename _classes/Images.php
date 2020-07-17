@@ -19,7 +19,7 @@ class Images
         $data = $reqImages->fetch();
     
         $this->id = $id;
-        $this->image = $data['image'];
+        $this->image = $data.basename($_FILES["image"]["name"]);
         $this->id_category = $data['id_category'];  
         $this->id_shop = $data['id_shop']; 
         $this->id_article = $data['id_article'];
@@ -35,8 +35,6 @@ class Images
         return $reqImages->fetchAll();
     } 
      
-    function tranfertImage(){
-     
-    }
+   
 }
 

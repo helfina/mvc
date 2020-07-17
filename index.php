@@ -18,7 +18,12 @@ Autoloader::register();
 // Définition de la page courante
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
-} else {
+} //elseif($page = "admin"){
+   
+//        include_once __DIR__ . '/_admin/indexAdmin.php';
+    
+//}
+else{
     $page = 'home';
 }
 
