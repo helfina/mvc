@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 14 juil. 2020 à 19:52
+-- Généré le : jeu. 16 juil. 2020 à 21:04
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.2.29
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `bleuetsrose`
 --
-CREATE DATABASE IF NOT EXISTS `bleuetsrose` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `bleuetsrose`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,6 @@ USE `bleuetsrose`;
 -- Structure de la table `admins`
 --
 
-DROP TABLE IF EXISTS `admins`;
 CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
   `log` varchar(255) NOT NULL,
@@ -39,14 +36,6 @@ CREATE TABLE `admins` (
   `id_article` int(11) NOT NULL,
   `id_image` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELATIONS POUR LA TABLE `admins`:
---   `id_image`
---       `images` -> `id`
---   `id_article`
---       `articles` -> `id`
---
 
 --
 -- Déchargement des données de la table `admins`
@@ -62,7 +51,6 @@ INSERT INTO `admins` (`id`, `log`, `pass`, `firstname`, `lastname`, `id_article`
 -- Structure de la table `articles`
 --
 
-DROP TABLE IF EXISTS `articles`;
 CREATE TABLE `articles` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -73,14 +61,6 @@ CREATE TABLE `articles` (
   `id_category` int(11) NOT NULL,
   `id_image` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELATIONS POUR LA TABLE `articles`:
---   `id-admin`
---       `admins` -> `id`
---   `id_category`
---       `categories` -> `id`
---
 
 --
 -- Déchargement des données de la table `articles`
@@ -100,15 +80,10 @@ INSERT INTO `articles` (`id`, `title`, `sentence`, `content`, `date`, `id-admin`
 -- Structure de la table `categories`
 --
 
-DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELATIONS POUR LA TABLE `categories`:
---
 
 --
 -- Déchargement des données de la table `categories`
@@ -126,7 +101,6 @@ INSERT INTO `categories` (`id`, `nom`) VALUES
 -- Structure de la table `horaires`
 --
 
-DROP TABLE IF EXISTS `horaires`;
 CREATE TABLE `horaires` (
   `id` int(11) NOT NULL,
   `id_shop` int(11) NOT NULL,
@@ -136,12 +110,6 @@ CREATE TABLE `horaires` (
   `AmidiOpen` time DEFAULT NULL,
   `AmidiClose` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELATIONS POUR LA TABLE `horaires`:
---   `id_shop`
---       `magasins` -> `id`
---
 
 --
 -- Déchargement des données de la table `horaires`
@@ -169,7 +137,6 @@ INSERT INTO `horaires` (`id`, `id_shop`, `jour`, `matinOpen`, `matinClose`, `Ami
 -- Structure de la table `images`
 --
 
-DROP TABLE IF EXISTS `images`;
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `image` blob NOT NULL,
@@ -178,18 +145,6 @@ CREATE TABLE `images` (
   `id_article` int(11) NOT NULL,
   `id_admin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELATIONS POUR LA TABLE `images`:
---   `id_category`
---       `categories` -> `id`
---   `id_shop`
---       `magasins` -> `id`
---   `id_article`
---       `articles` -> `id`
---   `id_admin`
---       `admins` -> `id`
---
 
 --
 -- Déchargement des données de la table `images`
@@ -206,7 +161,6 @@ INSERT INTO `images` (`id`, `image`, `id_category`, `id_shop`, `id_article`, `id
 -- Structure de la table `magasins`
 --
 
-DROP TABLE IF EXISTS `magasins`;
 CREATE TABLE `magasins` (
   `id` int(11) NOT NULL,
   `nom` varchar(255) NOT NULL,
@@ -220,22 +174,32 @@ CREATE TABLE `magasins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- RELATIONS POUR LA TABLE `magasins`:
---   `id_category`
---       `categories` -> `id`
---   `id_horaire`
---       `horaires` -> `id`
---   `id_image`
---       `images` -> `id`
---
-
---
 -- Déchargement des données de la table `magasins`
 --
 
 INSERT INTO `magasins` (`id`, `nom`, `rue`, `code_postal`, `ville`, `tel`, `id_horaire`, `id_image`, `id_category`) VALUES
 (1, 'Bleuets Rose - Saint-Jean-Brévelay', '2 Rue de buléon', '56660', 'Saint-Jean-Brévelay', '02.97.60.41.65', 1, 1, 1),
 (2, 'Bleuets Rose - Grand-champ', '1 route de vannes', '56390', ' Grand-Champ', '\r\n09.52.46.16.14', 2, 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `smtp`
+--
+
+CREATE TABLE `smtp` (
+  `id` int(11) NOT NULL,
+  `pass` varchar(255) NOT NULL,
+  `user` varchar(255) NOT NULL,
+  `host` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `smtp`
+--
+
+INSERT INTO `smtp` (`id`, `pass`, `user`, `host`) VALUES
+(1, 'L*HjBeMREZqB', 'gake0333', 'georgie.o2switch.net');
 
 --
 -- Index pour les tables déchargées
@@ -291,6 +255,12 @@ ALTER TABLE `magasins`
   ADD KEY `fk_id_category` (`id_category`);
 
 --
+-- Index pour la table `smtp`
+--
+ALTER TABLE `smtp`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -329,6 +299,12 @@ ALTER TABLE `images`
 --
 ALTER TABLE `magasins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT pour la table `smtp`
+--
+ALTER TABLE `smtp`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Contraintes pour les tables déchargées

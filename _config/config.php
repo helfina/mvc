@@ -5,8 +5,8 @@
 // --------------------------- //
 
 // //!\\ A enlever lors du déploiement
-error_reporting(E_ERROR | E_PARSE | E_ALL);
-ini_set('display_errors', true);
+// error_reporting(E_ERROR | E_PARSE | E_ALL);
+// ini_set('display_errors', true);
 
 
 // --------------------------- //
@@ -42,17 +42,19 @@ define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
-define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "bleuetsrose");
-define("DATABASE_USER", "root");
-define("DATABASE_PASSWORD","");
+define("DATABASE_HOST", $_ENV["DATABASE_HOST"]);
+define("DATABASE_NAME", $_ENV["DATABASE_NAME"]);
+define("DATABASE_USER", $_ENV["DATABASE_USER"]);
+define("DATABASE_PASSWORD", $_ENV["DATABASE_PASSWORD"]);
 
 //Language
 define("DEFAULT_LANGUAGE", "fr");
 
 //SMTP Connexion
 
-define("SMTP_HOST", "georgie.o2switch.net");
-define("SMTP_USER", "gake0333");
-define("SMTP_PASS", "L*HjBeMREZqB");
-define("SMTP_PORT", 587);
+define("SMTP_HOST", $_ENV["SMTP_HOST"]);
+define("SMTP_USER", $_ENV["SMTP_USER"]);
+define("SMTP_PASS", $_ENV["SMTP_PASS"]);
+define("SMTP_PORT", $_ENV["SMTP_PORT"]);
+
+

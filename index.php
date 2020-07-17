@@ -1,7 +1,14 @@
 <?php
 
+//autoload.php genere avec composer
+require_once __DIR__ . '/vendor/autoload.php';
+
+if (file_exists(__DIR__ . '/.env')) {
+    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
 // Inclusion des fichiers principaux
-include_once '_config/config.php';
+include_once '_config/config.php';  //Demarre la session
 include_once '_functions/functions.php';
 
 // Autoloader

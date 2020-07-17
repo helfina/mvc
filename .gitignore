@@ -1,3 +1,4 @@
-/vendor/
-/_admin/
-/_config/config.php/
+vendor/*
+_admin/*
+.env
+

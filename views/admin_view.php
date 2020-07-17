@@ -53,14 +53,7 @@
 
         </div>
 
-        <?php
-         Admins::transfert();
-
-         if ( isset($_FILES['fic']) )
-         {
-             Admins::transfert();
-         }
-      ?>
+        
         <h3>Envoi d'une image</h3>
       <form enctype="multipart/form-data" action="#" method="post">
          <input type="hidden" name="MAX_FILE_SIZE" value="250000" />

@@ -12,26 +12,10 @@ require 'vendor/autoload.php';
 if(!empty ($_POST)&& isset ($_POST['contactSend'])){
     
     if(
-        isset($_POST['nom']) 
-        && isset($_POST['prenom']) 
-        && isset($_POST['cp']) 
-        && isset($_POST['ville']) 
-        && isset ($_POST['adresse'])
-        && isset($_POST['tel'])
-        && isset($_POST['email'])
-        && isset($_POST['objet'])
-        && isset($_POST['msg']))
+        isset($_POST['nom'])  && isset($_POST['prenom'])  && isset($_POST['cp'])  && isset($_POST['ville']) && isset ($_POST['adresse']) && isset($_POST['tel'])  && isset($_POST['email']) && isset($_POST['objet']) && isset($_POST['msg']))
         {
 
-    if(!empty($_POST['nom']) 
-        && !empty($_POST['prenom']) 
-        && !empty($_POST['cp']) 
-        && !empty($_POST['ville']) 
-        && !empty($_POST['adresse']) 
-        && !empty($_POST['tel']) 
-        && !empty($_POST['email']) 
-        && !empty($_POST['objet']) 
-        && !empty($_POST['msg']))
+    if(!empty($_POST['nom'])  && !empty($_POST['prenom'])  && !empty($_POST['cp']) && !empty($_POST['ville'])  && !empty($_POST['adresse']) && !empty($_POST['tel'])  && !empty($_POST['email']) && !empty($_POST['objet'])  && !empty($_POST['msg']))
         {try{
             $nom = str_secur($_POST['nom']);
             $prenom = str_secur($_POST['prenom']);

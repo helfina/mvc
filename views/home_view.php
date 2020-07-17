@@ -25,7 +25,7 @@
 
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
             
-         
+   
                 <h3>St-Jean-brevelay</h3>
           
                 <figure class="row">
