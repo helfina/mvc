@@ -16,8 +16,8 @@ CREATE TABLE `admins` (
 `pass` VARCHAR(255) NOT NULL,
 `firstname` VARCHAR(255) NOT NULL,
 `lastname` VARCHAR(255) NOT NULL,
-`id_article` INT(11) NOT NULL,
-`id_image` INT(11) NOT NULL
+`id_article` INT(11) NULL,
+`id_image` INT(11)  NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 -- --------------------------------------------------------
 
