@@ -50,6 +50,15 @@ function __construct($id)
      return $reqAdmin->fetchAll();
  } 
 
+ static function orderDateArticle(){
+    global $db;
+
+    $reqArticle = $db->prepare('SELECT * FROM articles ORDER BY date DESC
+    ');
+    $reqArticle->execute([]);
+    return $reqArticle->fetch();   
+    
+}
 static function create(){}
 static function delete(){}
 static function update(){}

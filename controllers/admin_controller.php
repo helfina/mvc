@@ -41,5 +41,5 @@ $allshop = Magasins::getAllShop();
 $allArticle = Articles::getAllArticles();
 $allCategory = Categories::getAllCategories();
 $allImage = Images::getAllImages();
- 
+$articles = Admins::orderDateArticle(); 
 
