@@ -33,8 +33,8 @@ CREATE TABLE `admins` (
   `pass` varchar(255) NOT NULL,
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
-  `id_article` int(11) NOT NULL,
-  `id_image` int(11) NOT NULL
+  `id_article` int(11)  NULL,
+  `id_image` int(11)  NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -57,9 +57,9 @@ CREATE TABLE `articles` (
   `sentence` varchar(255) NOT NULL,
   `content` text NOT NULL,
   `date` datetime DEFAULT current_timestamp(),
-  `id-admin` int(11) NOT NULL,
-  `id_category` int(11) NOT NULL,
-  `id_image` int(11) NOT NULL
+  `id-admin` int(11)  NULL,
+  `id_category` int(11)  NULL,
+  `id_image` int(11)  NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -141,9 +141,9 @@ CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `image` blob NOT NULL,
   `id_category` int(11) NOT NULL,
-  `id_shop` int(11) NOT NULL,
-  `id_article` int(11) NOT NULL,
-  `id_admin` int(11) NOT NULL
+  `id_shop` int(11)  NULL,
+  `id_article` int(11) NULL,
+  `id_admin` int(11)  NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -168,9 +168,9 @@ CREATE TABLE `magasins` (
   `code_postal` varchar(255) NOT NULL,
   `ville` varchar(255) NOT NULL,
   `tel` varchar(255) NOT NULL,
-  `id_horaire` int(11) NOT NULL,
-  `id_image` int(11) NOT NULL,
-  `id_category` int(11) NOT NULL
+  `id_horaire` int(11)  NULL,
+  `id_image` int(11)  NULL,
+  `id_category` int(11)  NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
