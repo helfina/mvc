@@ -38,9 +38,9 @@
 
                     <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="ville">Ville</label>
                     <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="ville" id="ville" required>
-              
+
                     <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for=" adresse">Adresse</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="adresse" id="adresse" required >
+                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="adresse" id="adresse">
 
                     <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="tel">Téléphone</label>
                     <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="tel" name="tel" id="tel" required>

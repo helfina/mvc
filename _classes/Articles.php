@@ -34,7 +34,10 @@ class Articles
         $this->date = $data['date'];
         $this->id_admin = $data['id_admin'];
         $this->id_category = $data['id_category'];
-        $this->id_image = $data['id_image'];        
+        $this->id_image = $data['id_image'];
+
+
+        
     }
 
 
@@ -44,8 +47,7 @@ class Articles
      *
      * @return void
      */
-    static function getAllArticles()
-    {
+    static function getAllArticles(){
 
             global $db;
 
@@ -63,17 +65,9 @@ class Articles
 
         global $db;
 
-        $reqArticle = $db->prepare(' SELECT `articles`.*, `images`.`id_article`, `admins`.`id_article`, `categories`.* 
-        FROM `articles` 
-        LEFT JOIN `images` ON `images`.`id_article` = `articles`.`id` 
-        LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` 
-        LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id` 
-        ORDER BY `articles`.`id` 
-        DESC LIMIT 0, 25
+        $reqArticle = $db->prepare('SELECT `articles`.*, `images`.`id_article`, `admins`.`id_article`, `categories`.* FROM `articles` LEFT JOIN `images` ON `images`.`id_article` = `articles`.`id` LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id` ORDER BY `articles`.`id` DESC LIMIT 0, 25
         ');
         $reqArticle->execute([]);
-        return $reqArticle->fetchAll();        
-    }
-
-   
+        return $reqArticle->fetchAll();
+}
 }
