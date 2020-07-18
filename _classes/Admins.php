@@ -50,6 +50,7 @@ function __construct($id)
      return $reqAdmin->fetchAll();
  } 
 
+ // !TDODOS faire cruds
 
 
 }

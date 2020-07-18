@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(jquery).ready(function () {
     
     $("#cp").autocomplete({
         source: function (request, response) {
