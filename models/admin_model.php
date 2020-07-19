@@ -10,6 +10,7 @@ class Admins
         public $lastname;
         public $id_article;
         public $id_image;
+        public $confirmer;
  
 /**
  * Authors constructor .
@@ -33,6 +34,7 @@ function __construct($id)
     $this->lastname = $data['lastname'];
     $this->id_article = $data['id_article'];
     $this->id_image = $data['id_image'];
+    $this->confirmer = $data['confirmer'];
 
 
 }
@@ -45,7 +47,7 @@ function __construct($id)
   */
  static function getAllAdmin(){
      global $db;
-     $reqAdmin = $db->prepare('SELECT * FROM `admins`');
+     $reqAdmin = $db->prepare('SELECT * FROM `admins` ORDER BY id DESC');
      $reqAdmin->execute([]);
      return $reqAdmin->fetchAll();
  } 
