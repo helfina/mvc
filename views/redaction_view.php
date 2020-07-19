@@ -14,9 +14,26 @@
 
     <h1>Redaction</h1>
     <form action="" method="POST" style="background-color: purple; display:flex; flex-direction:column" class="row">
-        <input type="text" name="article_titre" id="" placeholder="titre">
-        <textarea name="article_contenu" id="" cols="30" rows="10"placeholder="Contenu de l'article"></textarea>
-        <input type="image" src="" alt="image de l'article">
+
+        <input type="text" name="titre" id="" placeholder="titre">
+
+        <input type="text" name="description" id="" placeholder="description">
+
+        <textarea name="contenu" id="" cols="30" rows="10"placeholder="Contenu de l'article"></textarea>
+
+        <select>
+            <?php foreach($allcategory as  $allcategory => $category) : ?>
+            <option name="categorie" value="<?= $category['id']?>"><?= $category['nom']?></option>
+            <?php endforeach; ?>
+        </select>
+
+        <select>
+            <?php foreach($allImages as  $allImages => $image) : ?>
+            <option name="categorie" value="<?= $image['id']?>"><?= $image['image']?></option>
+            <?php endforeach; ?>
+        </select>
+
+        
         <input type="submit" value="Envoyer l'article">
     </form>
     <br>

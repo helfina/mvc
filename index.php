@@ -1,5 +1,5 @@
-<?= realpath('index.php'); ?>
 <?php
+// realpath('index.php');
 //autoload.php genere avec composer
 require_once __DIR__ . '/vendor/autoload.php';
 

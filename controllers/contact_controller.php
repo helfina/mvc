@@ -23,7 +23,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
             $ville = str_secur($_POST['ville']);
             $adresse = str_secur($_POST['adresse']);
             $tel = str_secur($_POST['tel']);
-            $email = str_secur(htmlentities($_POST['email']));
+            $email = str_secur($_POST['email']);
             $objet = str_secur($_POST['objet']);
             $msg = str_secur($_POST['msg']);
 

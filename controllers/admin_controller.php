@@ -2,7 +2,10 @@
 // if (!isset($_SESSION['id']) OR $_SESSION['id'] != 1){
 //     exit();
 // }
-//script pour pouvoir confirmer ou non les autre administrateur
+
+/**
+ * script pour pouvoir confirmer ou supprimer les autre administrateur
+ */
 
 if(isset($_GET['type']) AND $_GET['type'] == 'admin'){
 
