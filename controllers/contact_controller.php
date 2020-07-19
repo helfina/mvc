@@ -29,7 +29,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
 
          
             $message = '- message envoyer par: ' . '<br>'. $nom . '<br>' .  $prenom .'<br>'. $cp .'<br>'. $ville .'<br>' .$adresse .'<br>'. $tel .'<br>'. $adresse .'<br>'. $email . ':' . '<br>' . $objet . '<br>' . $msg;
-          
+          debug($msg);
 
             //ENVOYER UN EMAIL
             // mail('gkerforne@gmail.com', 'On me contact sur mon site',$message);   
@@ -44,6 +44,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
             $mail->Subject = $objet;
             $mail->Body = $message;
             $mail->send();
+            $envoi = 'Merci de nous avoir contacter';
             echo 'Message has been sent';
 
             }catch(Exception $e){

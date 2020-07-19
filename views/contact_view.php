@@ -18,8 +18,8 @@
         <h1>Bleuets Rose</h1>
         <section class="row contact">
         
-        <?php if (!empty($msg)) {
-    echo "<h2>$msg</h2>";
+        <?php if (!empty($envoi)) {
+    echo "<h2>$envoi</h2>";
 } ?>
             <form class="mobile-12 tablette-12 pc-6 col-6" action="" method="post">
                 <fieldset class="row formulaire">

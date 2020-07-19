@@ -2,11 +2,11 @@
 
 class Admins
 {
-    //les proprieter de la classe
+    //les propriety de la classe
         public $id;
         public $log;
         public $pass;
-        public $fisrtname;
+        public $firstname;
         public $lastname;
         public $id_article;
         public $id_image;
@@ -39,7 +39,7 @@ function __construct($id)
 
 
  /**
-  * Envoie de tous les admin
+  * Envois de tous les admin
   *
   * @return array
   */
@@ -50,9 +50,9 @@ function __construct($id)
      return $reqAdmin->fetchAll();
  } 
 
-static function create(){}
-static function delete(){}
-static function update(){}
+    static function create(){}
+    static function delete(){}
+    static function update(){}
 
 
 

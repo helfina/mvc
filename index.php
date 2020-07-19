@@ -1,9 +1,10 @@
+<?= realpath('index.php'); ?>
 <?php
-
 //autoload.php genere avec composer
 require_once __DIR__ . '/vendor/autoload.php';
 
 if (file_exists(__DIR__ . '/.env')) {
+
     $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
@@ -19,7 +20,7 @@ Autoloader::register();
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
 } //elseif($page = "admin"){
-   
+    //tu redirige vers
 //        include_once __DIR__ . '/_admin/indexAdmin.php';
     
 //}
