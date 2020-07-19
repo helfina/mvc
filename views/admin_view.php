@@ -28,16 +28,24 @@
 
                 <?php if($admin['confirmer'] == 0){ ?>
 
-                - <button type="submit" name="confirmer"><a href="index.php?type=admin&confirmer=<?= $admin['id']?>">Confirmer</a></button>
+                - <button type="submit" name="confirmer"><a
+                        href="index.php?type=admin&confirmer=<?= $admin['id']?>">Confirmer</a></button>
 
                 <?php } ?>
 
-                - <button type="submit" name="confirmer"><a href="index.php?type=admin&Supprimer<?= $admin['id']?>">Supprimer</a></button>
+                - <button type="submit" name="confirmer"><a
+                        href="index.php?type=admin&Supprimer<?= $admin['id']?>">Supprimer</a></button>
 
             </li>
             <?php endforeach; ?>
         </ul>
 
+        <h2>Articles</h2>
+        <ul>
+            <?php foreach($allArticles as  $allArticles => $articles) : ?>
+                <li><?= $articles['title']?></li>
+            <?php endforeach; ?>
+        </ul>
     </main>
 
     <?php include_once 'views/includes/footer.php'?>

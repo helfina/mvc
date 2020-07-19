@@ -29,3 +29,4 @@ if(isset($_GET['type']) AND $_GET['type'] == 'admin'){
 }
  
 $allAdmins = Admins::getAllAdmin();
+$allArticles = Articles::getAllArticles();
