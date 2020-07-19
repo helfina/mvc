@@ -53,8 +53,21 @@ function __construct($id)
  } 
 
     static function create(){}
-    static function delete(){}
-    static function update(){}
+    static function delete(){
+
+    global $db;
+     $reqAdmin = $db->prepare('DELETE FROM admins WHERE id = ?');
+     $reqAdmin->execute([]);
+     return $reqAdmin->fetch();
+    }
+
+    static function updateConfirmer(){
+        global $db;
+        $reqAdmin = $db->prepare('UPDATE admins SET confirmer = 1 WHERE id = ?');
+        $reqAdmin->execute([]);
+        return $reqAdmin->fetch();
+
+    }
 
 
 

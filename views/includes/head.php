@@ -18,8 +18,8 @@
 <meta property="og:image" content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
 
 <!-- CSS Styles -->
-<!-- <link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.css"/> -->
-<!-- <link rel="stylesheet" href="<?= PATH?>assets/styles/css/compass.css"> -->
+<!-- <link rel="stylesheet" href="<= PATH?>assets/styles/css/index.css"/> -->
+<!-- <link rel="stylesheet" href="<= PATH?>assets/styles/css/compass.css"> -->
 
 
 
@@ -39,7 +39,7 @@
 
 <link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\header.css">
 
-<link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\admin.css">
+<link rel="stylesheet" href="<?= PATH?>assets\styles\css\admin.css">
 <link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\galerie.css">
 <link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\contact.css">
 <link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\index.css">

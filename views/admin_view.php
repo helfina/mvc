@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <html>
+
 <head>
 
     <?php include_once 'views/includes/head.php'?>
@@ -9,30 +9,39 @@
     <title><?= ucfirst($pageAdmin) ?></title>
 </head>
 
-<body>
+<body class="container">
 
     <?php include_once 'views/includes/header.php'?>
+    <header class="row">
+        <nav>
 
+        </nav>
+    </header>
     <h1>Administration</h1>
-
-    <ul>
+    <main>
+        <h2>Gestions des Admins</h2>
+        <ul class="col-6 ">
             <?php foreach($allAdmins as  $allAdmins => $admin) : ?>
 
-        <li>
-            <?= $admin['id']?> : <?= $admin['firstname'] ?> <?= $admin['lastname'] ?> 
+            <li>
+                <?= $admin['id']?> : <?= $admin['firstname'] ?> <?= $admin['lastname'] ?>
 
-            <?php if($admin['confirmer'] == 0){ ?>
+                <?php if($admin['confirmer'] == 0){ ?>
 
-                - <a href="index.php?page=<?= $admin['id']?>">Confirmer</a> 
+                - <button type="submit" name="confirmer"><a href="index.php?type=admin&confirmer=<?= $admin['id']?>">Confirmer</a></button>
 
                 <?php } ?>
 
-                - <a href="index.php?page=<?= $admin['id']?>">Supprimer</a> 
+                - <button type="submit" name="confirmer"><a href="index.php?type=admin&Supprimer<?= $admin['id']?>">Supprimer</a></button>
 
-        </li>
-        <?php endforeach; ?>
-    </ul>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
+    </main>
+
     <?php include_once 'views/includes/footer.php'?>
 
 </body>
+
 </html>
