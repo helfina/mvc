@@ -43,7 +43,7 @@
         <h2>Articles</h2>
         <ul>
             <?php foreach($allArticles as  $allArticles => $articles) : ?>
-                <li><?= $articles['title']?></li>
+                <li><a href="index.php?page=article?id=<?= $articles['id']?>"><?= $articles['title']?></a></li>
             <?php endforeach; ?>
         </ul>
     </main>
