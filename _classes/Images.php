@@ -4,7 +4,6 @@ class Images
 {
     public $id;
     public $image;
-    public $image_name;
     public $id_category;
     public $id_shop;
     public $id_article;
@@ -31,7 +30,7 @@ class Images
     static function getAllImages()
     {
         global $db;
-        $reqImages = $db->prepare("SELECT * FROM `images`");
+        $reqImages = $db->prepare("SELECT * FROM `images` ORDER BY id DESC");
         $reqImages->execute([]);
         return $reqImages->fetchAll();
     } 

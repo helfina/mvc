@@ -19,6 +19,7 @@
     </header>
     <h1>Administration</h1>
     <main>
+   
         <h2>Gestions des Admins</h2>
         <ul class="col-6 ">
             <?php foreach($allAdmins as  $allAdmins => $admin) : ?>
