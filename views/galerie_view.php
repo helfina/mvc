@@ -154,7 +154,7 @@
                 </figure>
 
                 <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\imagescompoflorale.jpg" alt="#">
+                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
                     <figcaption class="item__body">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
