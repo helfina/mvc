@@ -51,17 +51,44 @@ function __construct($id)
      $reqAdmin->execute([]);
      return $reqAdmin->fetchAll();
  } 
-
-    static function create(){}
-    static function delete(){
-
-    global $db;
-     $reqAdmin = $db->prepare('DELETE FROM admins WHERE id = ?');
-     $reqAdmin->execute([]);
-     return $reqAdmin->fetch();
+/**
+ * recupere les infos de l'admin
+ *
+ * @return void
+ */
+    static function getAdmin(){
+        global $db;
+        $reqAdmin = $db->prepare('SELECT * FROM `admins` WHERE id = ?');
+        $reqAdmin->execute([[$_SESSION['admin']]]);
+        $reqAdmin = $reqAdmin->fetch();
+        return $reqAdmin;
     }
 
-    static function updateConfirmer(){
+    static function connexAdmin($log){
+
+        global $db;
+        $reqAdmin = $db->prepare('SELECT `log`, `pass` FROM `admins` WHERE id = ?');
+        $reqAdmin->execute([$log]);
+        $reqAdmin = $reqAdmin->fetch();
+        return $reqAdmin;
+    }
+ /**
+ * permet de supprimer un admin de la db
+ *
+ * @param [type] $id
+ * @return void
+ **/
+    static function delete($id){
+
+        global $db;
+        $id = (int)$_GET['id'];
+        $reqAdmin = $db->prepare('DELETE FROM admins WHERE id = ?');
+        $reqAdmin->execute([]);
+        return $reqAdmin->fetch();
+    }
+
+    static function confirmAdmin(){
+        
         global $db;
         $reqAdmin = $db->prepare('UPDATE admins SET confirmer = 1 WHERE id = ?');
         $reqAdmin->execute([]);

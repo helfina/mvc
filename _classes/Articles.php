@@ -10,7 +10,7 @@ class Articles
     public $id_category;
     public $id_image;
 
-    function __construct($id)
+    public function __construct($id)
     {
         global $db;
 
@@ -34,10 +34,7 @@ class Articles
         $this->date = $data['date'];
         $this->id_admin = $data['id_admin'];
         $this->id_category = $data['id_category'];
-        $this->id_image = $data['id_image'];
-
-
-        
+        $this->id_image = $data['id_image'];        
     }
 
 
@@ -65,9 +62,48 @@ class Articles
 
         global $db;
 
-        $reqArticle = $db->prepare('SELECT `articles`.*, `categories`.`nom`, `images`.`image`, `admins`.`firstname` FROM `articles` LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id`, `images` LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` ORDER BY `articles`.`date` DESC
+        $reqArticle = $db->prepare('SELECT `articles`.*, `categories`.`nom`, `images`.`image`, `admins`.`firstname` FROM `articles` LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id`, `images` LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` ORDER BY `articles`.`date` DESC 
         ');
         $reqArticle->execute([]);
         return $reqArticle->fetchAll();
-}
+    }
+
+    static function readArticle(){
+
+           global $db;
+
+        $reqArticle = $db->prepare('SELECT `articles`.*, `categories`.`nom`, `images`.`image`, `admins`.`firstname` FROM `articles` LEFT JOIN `categories` ON `articles`.`id_category` = `categories`.`id`, `images` LEFT JOIN `admins` ON `admins`.`id_image` = `images`.`id` WHERE `id` = ? 
+        ');
+        $reqArticle->execute([]);
+        return $reqArticle->fetchAll();
+
+    }
+
+    static function deleteArticle(){
+        global $db;
+
+        $reqArticle = $db->prepare('DELETE articles.* FROM articles WHERE id = ?
+        ');
+        $reqArticle->execute([]);
+        return $reqArticle->fetchAll();
+    }
+    
+    static  function editArticle(){
+        global $db;
+
+        $reqArticle = $db->prepare('UPDATE articles SET title = ?,sentence = ?, content = ?,id_admin = 1, id_category = ?, id_image = ?, date_edit = NOW() WHERE id = ?
+        ');
+        $reqArticle->execute([]);
+        return $reqArticle->fetchAll();
+    }
+
+    static function redactArticle(){
+        global $db;
+
+        $reqArticle = $db->prepare('INSERT INTO `articles` (`id`,`title`,`description`,  `content`, `date`, `id_admin`, `id_category`, `id_image` )
+        VALUE(?,?,?,?,NOW(),1,?)
+        ');
+        $reqArticle->execute([]);
+        return $reqArticle->fetchAll();
+    }
 }

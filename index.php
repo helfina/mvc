@@ -19,8 +19,10 @@ Autoloader::register();
 // Définition de la page courante
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
-} //elseif($page = "admin"){
+} //elseif($page = "admin" ||$page = 'article' ||  $page = 'redaction' || $page = 'modifier' || $page = 'supprimer'){
+    //$page = $admin;
     //tu redirige vers
+     //  header('Location: http://127.0.0.1/mvc/indexAdmin.php;
 //        include_once __DIR__ . '/_admin/indexAdmin.php';
     
 //}
@@ -44,7 +46,7 @@ if (in_array($page.'_controller.php', $allPages)) {
     include_once 'views/'.$page.'_view.php';
 
 } else {
-
+    $page = 'error';
     // Inclusion de la page erreur
     include_once 'models/error_model.php';
     include_once 'controllers/error_controller.php';
