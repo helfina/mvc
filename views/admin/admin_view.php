@@ -4,14 +4,14 @@
 
 <head>
 
-    <?php include_once 'views/includes/head.php'?>
+    <?php include_once 'includes/head.php'?>
 
-    <title><?= ucfirst($pageAdmin) ?></title>
+    <title><?= ucfirst($admin) ?></title>
 </head>
 
 <body class="container">
 
-    <?php include_once 'views/includes/header.php'?>
+    <?php include_once 'includes/header.php'?>
     <header class="row">
         <nav>
 
@@ -47,6 +47,7 @@
             foreach($allArticles as  $allArticles => $articles) : ?>
                 <li>
                     <a href="index.php?id=<?= $articles['id']?>"><?= $articles['title']?></a> 
+                    
                     | <a href="redaction_view.php?edit=<?= $a['id'] ?>">Modifier</a> 
                     | <a href="supprimer_view.php?id=<?= $a['id'] ?>">Supprimer</a></li>
 
@@ -58,7 +59,7 @@
             // !TODOS verifier les chemein liens de page peut etre faire les route dans le htacces et index.php ou redirection header location
             foreach($allImages as  $allImages => $images) : ?>
                 <li>
-                    <a href="index.php?id=<?= $images['id']?>"><?= $images['image']?></a> 
+                    <a href="indexAdmin.php?admin=redaction=<?= $images['id']?>"><?= $images['image']?></a> 
                     | <a href="redaction_view.php?edit=<?= $a['id'] ?>">Modifier</a> 
                     | <a href="supprimer_view.php?id=<?= $a['id'] ?>">Supprimer</a></li>
 
@@ -79,10 +80,10 @@
 		
 		<?php endif;?>
 		
-		<form action="index.php" enctype="multipart/form-data" method="post">
+		<form action="" enctype="multipart/form-data" method="post">
 			
 			<label for="avatar">Charger une photo :</label>
-			<input type="file" name="avatar" />
+			<input type="file" name="image" />
 			
 			<input type="submit" class="submit" value="Charger" />
 			
@@ -107,7 +108,7 @@
 	</div>
     </main>
 
-    <?php include_once 'views/includes/footer.php'?>
+    <?php include_once 'includes/footer.php'?>
 
 </body>
 

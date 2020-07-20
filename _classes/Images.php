@@ -4,6 +4,7 @@ class Images
 {
     public $id;
     public $image;
+    public $image_name;
     public $id_category;
     public $id_shop;
     public $id_article;

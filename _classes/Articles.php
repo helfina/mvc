@@ -5,7 +5,7 @@ class Articles
     public $title;
     public $sentence;
     public $content;
-    public $date;
+    public $date_time_pulication;
     public $id_admin;
     public $id_category;
     public $id_image;
@@ -31,7 +31,7 @@ class Articles
         $this->title = $data['title'];
         $this->sentence = $data['sentence'];
         $this->content = $data['content'];
-        $this->date = $data['date'];
+        $this->date_time_pulication = $data['date_time_pulication'];
         $this->id_admin = $data['id_admin'];
         $this->id_category = $data['id_category'];
         $this->id_image = $data['id_image'];        

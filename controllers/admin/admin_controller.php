@@ -37,7 +37,7 @@ $allImages = Images::getAllImages();
 
 if(!empty($_FILES))
 {
-	$image = $_FILES['avatar'];
+	$image = $_FILES['image'];
 	$image_name = $image['name'];
 	$ext = strtolower(substr(strrchr($image_name,'.'),1));
 	$ext_aut = array('jpg','jpeg','png','gif');
@@ -74,8 +74,8 @@ if(!empty($_FILES))
 	
 	if($valid)
 	{
-		$path_to_image = 'images/fullsize/';
-		$path_to_min = 'images/min/';
+		$path_to_image = 'assets/images/fullsize/';
+		$path_to_min = 'assets/images/min/';
 		
 		$filename = sha1(uniqid($image_name));
 		
@@ -103,7 +103,7 @@ if(!empty($_FILES))
 		
 		$nom_image = $filename.'.'.$ext;
 		
-		$req = $bdd->prepare('INSERT INTO images(image) VALUES(:image)');
+		$req = $db->prepare('INSERT INTO images(image) VALUES(:image)');
 		$req->execute(array('image'=>$nom_image));
 		$req->closeCursor();
 		

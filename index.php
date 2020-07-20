@@ -1,5 +1,4 @@
 <?php
-// realpath('index.php');
 //autoload.php genere avec composer
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -19,13 +18,13 @@ Autoloader::register();
 // Définition de la page courante
 if (isset($_GET['page']) AND !empty($_GET['page'])) {
     $page = trim(strtolower($_GET['page']));
-} //elseif($page = "admin" ||$page = 'article' ||  $page = 'redaction' || $page = 'modifier' || $page = 'supprimer'){
-    //$page = $admin;
-    //tu redirige vers
-     //  header('Location: http://127.0.0.1/mvc/indexAdmin.php;
-//        include_once __DIR__ . '/_admin/indexAdmin.php';
     
-//}
+}
+//  elseif($page = "admin" ||  $page = 'redaction' || $page = 'modifier' || $page = 'supprimer'){
+//     //tu redirige vers
+//     $page = $admin;
+//     $admin = header('Location: http://localhost/www/mvc/indexAdmin.php');
+// }
 else{
     $page = 'home';
 }

@@ -4,14 +4,14 @@
 <html>
 <head>
 
-    <?php include_once 'views/includes/head.php'?>
+    <?php include_once 'includes/head.php'?>
 
-    <title><?= ucfirst($page) ?></title>
+    <title><?= ucfirst($admin) ?></title>
 </head>
 
 <body>
 
-    <?php include_once 'views/includes/header.php'?>
+    <?php include_once 'includes/header.php'?>
 
     <h1>Articles</h1>
   
@@ -32,7 +32,7 @@
     <?php endforeach; ?>
  
 
-    <?php include_once 'views/includes/footer.php'?>
+    <?php include_once 'includes/footer.php'?>
 
     
 </body>

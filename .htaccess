@@ -5,13 +5,15 @@ RewriteEngine On
 RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ index.php?page=$1&%{QUERY_STRING}
 
 
+DirectoryIndex indexAdmin.php
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_\-]*)?/?$ indexAdmin.php?admin=$1&%{QUERY_STRING}
 
-
-<FilesMatch "admin_view.php">
+<FilesMatch "IndexAdmin.php">
 AuthName "Ceci est une page securiser"
 AuthType Basic
 
-AuthUserFile "C:\xampp\htdocs\www\mvc\views\.htpasswd"
+AuthUserFile "C:\xampp\htdocs\www\mvc\.htpasswd"
 Require valid-user
 
 </FilesMatch>
