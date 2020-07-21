@@ -19,7 +19,33 @@
     </header>
     <h1>Administration</h1>
     <main>
-        <div id="content">
+
+    <div class="content">
+        <h2>Gestions des Admins</h2>
+        <ul>
+            <?php foreach($allAdmins as $admin) : ?>
+
+            <li>
+                <?= $admin['id']?> : <?= $admin['firstname'] ?> <?= $admin['lastname'] ?>
+
+                <?php if($admin['confirmer'] == 0){ ?>
+
+                - <button type="submit" name="confirmer"><a
+                        href="indexAdmin.php?confirmer=<?= $admin['id']?>">Confirmer</a></button>
+
+                <?php } ?>
+
+                - <button type="submit" name="confirmer"><a
+                        href="indexAdmin.php?supprimer=<?= $admin['id']?>">Supprimer</a></button>
+
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+
+
+        <div class="content">
             <h2>Upload d'Images</h2>
 
             <?php if(isset($success)):?>
@@ -93,28 +119,7 @@
 
         </div>
         
-        <div id="content">
-        <h2>Gestions des Admins</h2>
-        <ul>
-            <?php foreach($allAdmins as  $allAdmins => $admin) : ?>
-
-            <li>
-                <?= $admin['id']?> : <?= $admin['firstname'] ?> <?= $admin['lastname'] ?>
-
-                <?php if($admin['confirmer'] == 0){ ?>
-
-                - <button type="submit" name="confirmer"><a
-                        href="indexAdmin.php?confirmer=<?= $admin['id']?>">Confirmer</a></button>
-
-                <?php } ?>
-
-                - <button type="submit" name="confirmer"><a
-                        href="indexAdmin.php?supprimer=<?= $admin['id']?>">Supprimer</a></button>
-
-            </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
+      
     </main>
 
     <?php include_once 'includes/footer.php'; ?>

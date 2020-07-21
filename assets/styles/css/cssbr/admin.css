@@ -1,4 +1,4 @@
-#content {
+.content {
     width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -8,7 +8,7 @@
     border: #777 1px solid;
 }
 
-#content p,
+.content p,
 label,
 legend {
     font: 1.5em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -17,7 +17,7 @@ legend {
 
 /* Form style */
 
-#content label {
+.content label {
     display: inline-block;
     float: left;
     height: 26px;
@@ -26,7 +26,7 @@ legend {
     font-size: 1.5em;
 }
 
-#content input.submit {
+.content input.submit {
     display: block;
     margin-top: 20px;
     width: 85px;
@@ -38,7 +38,7 @@ legend {
     -webkit-border-radius: 5px;
 }
 
-#content input.submit:hover {
+.content input.submit:hover {
     background: #444;
 }
 
