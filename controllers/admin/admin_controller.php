@@ -40,7 +40,7 @@ $allImages = Images::getAllImages();
 	if(!empty($_FILES))
 	{
 		$img = $_FILES['avatar'];
-		var_dump($img);
+		
 		$image_name = $img['name'];
 		//permet de recupere l'extension du fichier
 		$ext = strtolower(substr(strrchr($image_name,'.'),1));
@@ -79,7 +79,7 @@ $allImages = Images::getAllImages();
 			
 			//hash le nom de la photo
 			$filename = sha1(uniqid($image_name));
-			debug($filename);
+
 			$source = $img['tmp_name'];
 			$target = $path_to_image . $filename. '.'. $ext;
 			
