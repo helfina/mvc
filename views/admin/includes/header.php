@@ -19,7 +19,7 @@
                     <a href="indexAdmin.php?page=admin">Accueil admin</a>
                 </li>
                 <li>
-                    <a href="indexAdmin.php?admin=Redaction"> Rédaction/Edition </a>
+                    <a href="indexAdmin.php?admin=redaction"> Rédaction/Edition </a>
                 </li>
                 <li>
                     <a href="indexAdmin.php?admin=article">Article</a>

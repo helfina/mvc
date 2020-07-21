@@ -4,6 +4,7 @@
 <head>
 
     <?php include_once 'views/includes/head.php'?>
+    
     <title><?= ucfirst($page) ?> - Bleuets Rose</title>
 </head>
 
@@ -135,10 +136,18 @@
     </main>
     
     <?php include_once 'views/includes/footer.php'?>
+    <script src="<?= PATH?>assets/js/header.js" defer></script>
+    <script src="<?= PATH?>assets/js/auto.js" defer></script>
+    <script src="<?= PATH?>assets/js/openstreetmap.js" defer ></script>
+    <script src="<?= PATH?>assets/js/contact.js" defer></script>
     
-<script src="<?= PATH?>assets/js/auto.js" defer></script>
-<script src="<?= PATH?>assets/js/openstreetmap.js" defer ></script>
-<script src="<?= PATH?>assets/js/contact.js" defer></script>
+    <!-- ****************jQuery et jQuery UI pour mettre en place l’autocomplétion*************** -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" defer></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" defer></script>
+           <!--****** JS Leaflet********-->
+       <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+           integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+           crossorigin="" defer></script>
 </body>
 
 </html>

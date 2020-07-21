@@ -25,7 +25,7 @@
 
         <select>
             <option value=""></option>
-            <?php foreach($allcategory as  $allcategory => $category) : ?>
+            <?php foreach($allCategory as  $allCategory => $category) : ?>
             <option name="categorie" value="<?= $category['id']?>"><?= $category['nom']?></option>
             <?php endforeach; ?>
         </select>
@@ -33,15 +33,32 @@
         <select>
             <option value=""></option>
             <?php foreach($allImages as  $allImages => $image) : ?>
-            <option name="categorie" value="<?= $image['id']?>"><?= $image['image']?></option>
+            <option name="image" value="<?= $image['id']?>"><?= $image['image']?></option>
             <?php endforeach; ?>
         </select>
 
         
-        <input type="submit" value="Envoyer l'article">
+        <input type="submit" name="redaction" value="Envoyer l'article">
     </form>
     <br>
     <?php if(isset($info)){echo $info;}?>
+
+    <h2>Articles</h2>
+        <ul>
+            <li><a href="indexAdmin.php?admin=redaction">rédigez un nouvel article</a></li>
+            <?php 
+            // !TODOS verifier les chemein liens de page peut etre faire les route dans le htacces et index.php ou redirection header location
+            foreach($allArticles as  $allArticles => $articles) : ?>
+                <li>
+                    <a href="indexAdmin.php?admin=redaction<?= $articles['id']?>"><?= $articles['title']?></a> 
+                    
+                    | <a href="indexAdmin.php?modifier<?= $a['id'] ?>">Modifier</a> 
+                    | <a href="indexAdmin.php?id=<?= $a['id'] ?>">Supprimer</a>
+                </li>
+
+            <?php endforeach; ?>
+        </ul>
+
     <?php include_once 'includes/footer.php'?>
 
 </body>

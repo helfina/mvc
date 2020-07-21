@@ -184,6 +184,7 @@
     <?php include_once 'views/includes/footer.php'?>
 
     <script src="<?= PATH?>assets/js/galerie.js" defer></script>
+    <script src="<?= PATH?>assets/js/header.js" defer></script>
 </body>
 
 </html>

@@ -27,6 +27,15 @@
 
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Merienda:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+ <!-- ================== jQuery et jQuery UI pour mettre en place l’autocomplétion ================= -->
+
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css">
+
+<!-- ========================= CSS Leaflet pour api openStreetMap =====================-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
 <!--******mes feuilles de styles/ my stylsheet********-->
 
 <link rel="stylesheet" href="<?= PATH?>assets\styles\css\cssbr\grille.css">

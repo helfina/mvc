@@ -1,4 +1,4 @@
-<?php realpath('indexAdmin.php'); ?>
+<?php realpath('indexAdmin.php');?>
 <?php
 
 //autoload.php genere avec composer
