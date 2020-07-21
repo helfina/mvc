@@ -29,17 +29,17 @@
 
 <!--******mes feuilles de styles/ my stylsheet********-->
 
-<link rel="stylesheet" href="<?= PATH?>/assets/styles/css/cssbr/grille.css">
+<link rel="stylesheet" href="./assets/styles/css/cssbr/grille.css">
 
-<link rel="stylesheet" href="<?= PATH?>/assets/styles/css/cssbr/footer.css">
+<link rel="stylesheet" href="./assets/styles/css/cssbr/footer.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>/assets/styles/css/mediaqueries/mediaheaderfooter.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="./assets/styles/css/mediaqueries/mediaheaderfooter.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>/assets/styles/css/mediaqueries/mediaindex.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px)" href="./assets/styles/css/mediaqueries/mediaindex.css">
 
-<link rel="stylesheet" href="<?= PATH?>/assets/styles/css/cssbr/header.css">
+<link rel="stylesheet" href="./assets/styles/css/cssbr/header.css">
 
-<link rel="stylesheet" href="<?= PATH?>/assets/styles/css/admin.css">
+<link rel="stylesheet" href="./assets/styles/css/admin.css">
 >
 
 

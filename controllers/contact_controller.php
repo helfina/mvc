@@ -16,7 +16,8 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
         {
 
     if(!empty($_POST['nom'])  && !empty($_POST['prenom'])  && !empty($_POST['cp']) && !empty($_POST['ville'])  && !empty($_POST['adresse']) && !empty($_POST['tel'])  && !empty($_POST['email']) && !empty($_POST['objet'])  && !empty($_POST['msg']))
-        {try{
+        {
+            try{
             $nom = str_secur($_POST['nom']);
             $prenom = str_secur($_POST['prenom']);
             $cp = str_secur($_POST['cp']);
@@ -29,7 +30,7 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
 
          
             $message = '- message envoyer par: ' . '<br>'. $nom . '<br>' .  $prenom .'<br>'. $cp .'<br>'. $ville .'<br>' .$adresse .'<br>'. $tel .'<br>'. $adresse .'<br>'. $email . ':' . '<br>' . $objet . '<br>' . $msg;
-          debug($msg);
+          
 
             //ENVOYER UN EMAIL
             // mail('gkerforne@gmail.com', 'On me contact sur mon site',$message);   
@@ -45,10 +46,9 @@ if(!empty ($_POST)&& isset ($_POST['contactSend'])){
             $mail->Body = $message;
             $mail->send();
             $envoi = 'Merci de nous avoir contacter';
-            echo 'Message has been sent';
+            // echo 'Message has been sent';
 
             }catch(Exception $e){
-                
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
            

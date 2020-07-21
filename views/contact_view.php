@@ -18,10 +18,11 @@
         <h1>Bleuets Rose</h1>
         <section class="row contact">
         
-        <?php if (!empty($envoi)) {
-    echo "<h2>$envoi</h2>";
-} ?>
+  
             <form class="mobile-12 tablette-12 pc-6 col-6" action="" method="post">
+            <?php if (!empty($envoi)) { echo "<h2>$envoi</h2>";} ?>
+            <?php if (!empty($error)) { echo "<h2>$error</h2>";} ?>
+
                 <fieldset class="row formulaire">
                     <legend class="mobil-12 tablette-12 col-12">
                         Contactez Nous !
@@ -62,7 +63,7 @@
                     </div>
 
                 </fieldset>
-
+     
             </form>
 
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6 infoMag">

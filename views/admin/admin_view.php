@@ -4,14 +4,14 @@
 
 <head>
 
-    <?php include_once 'includes/head.php'?>
+    <?php include_once 'includes/head.php';?>
 
     <title><?= ucfirst($admin) ?></title>
 </head>
 
 <body class="container">
 
-    <?php include_once 'includes/header.php'?>
+    <?php include_once 'includes/header.php';?>
     <header class="row">
         <nav>
 
@@ -30,12 +30,12 @@
                 <?php if($admin['confirmer'] == 0){ ?>
 
                 - <button type="submit" name="confirmer"><a
-                        href="index.php?type=admin&confirmer=<?= $admin['id']?>">Confirmer</a></button>
+                        href="indexAdmin.php?confirmer=<?= $admin['id']?>">Confirmer</a></button>
 
                 <?php } ?>
 
                 - <button type="submit" name="confirmer"><a
-                        href="index.php?type=admin&Supprimer<?= $admin['id']?>">Supprimer</a></button>
+                        href="indexAdmin.php?supprimer=<?= $admin['id']?>">Supprimer</a></button>
 
             </li>
             <?php endforeach; ?>
@@ -49,8 +49,8 @@
                 <li>
                     <a href="index.php?id=<?= $articles['id']?>"><?= $articles['title']?></a> 
                     
-                    | <a href="redaction_view.php?edit=<?= $a['id'] ?>">Modifier</a> 
-                    | <a href="supprimer_view.php?id=<?= $a['id'] ?>">Supprimer</a></li>
+                    | <a href="indexAdmin.php?edit=<?= $a['id'] ?>">Modifier</a> 
+                    | <a href="indexAdmin.php?id=<?= $a['id'] ?>">Supprimer</a></li>
 
             <?php endforeach; ?>
         </ul>
@@ -61,8 +61,8 @@
             foreach($allImages as  $allImages => $images) : ?>
                 <li>
                     <a href="indexAdmin.php?admin=redaction=<?= $images['id']?>"><?= $images['image']?></a> 
-                    | <a href="redaction_view.php?edit=<?= $a['id'] ?>">Modifier</a> 
-                    | <a href="supprimer_view.php?id=<?= $a['id'] ?>">Supprimer</a></li>
+                    | <a href="indexAdmin.php?edit=<?= $a['id'] ?>">Modifier</a> 
+                    | <a href="indexAdmin.php?id=<?= $a['id'] ?>">Supprimer</a></li>
 
         <?php endforeach; ?>
 
@@ -83,7 +83,7 @@
 		
 		<form action="" enctype="multipart/form-data" method="post">
 			
-			<label for="avatar">Charger une photo :</label>
+			<label for="image">Charger une photo :</label>
 			<input type="file" name="image" />
 			
 			<input type="submit" class="submit" value="Charger" />
@@ -107,9 +107,10 @@
 		
 		
 	</div>
+        
     </main>
 
-    <?php include_once 'includes/footer.php'?>
+    <?php include_once 'includes/footer.php'; ?>
 
 </body>
 

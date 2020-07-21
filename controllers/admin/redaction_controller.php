@@ -6,7 +6,7 @@ $mode_edition = 0;
 
 
 // edition d'un article
-if(isset($_GET['edit']) AND !empty($_GET['edit'])){
+if(isset($_GET['admin']) AND !empty($_GET['admin'])){
 
     global $db;
     $mode_edition = 1;
