@@ -107,8 +107,8 @@
 			while($data = $req->fetch(PDO::FETCH_OBJ)):?>
 
                 <div class="img">
-                    <a href="/assets/images/fullsize/<?php echo $data->image;?>">
-                        <img src="/assets/images/min/<?php echo $data->image;?>" />
+                    <a href="./assets/images/fullsize/<?php echo $data->image;?>">
+                        <img src="./assets/images/min/<?php echo $data->image;?>" />
                     </a>
                 </div>
 

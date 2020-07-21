@@ -40,30 +40,16 @@ $allImages = Images::getAllImages();
 	if(!empty($_FILES))
 	{
 		$img = $_FILES['avatar'];
-		$image_name = $img['image'];
+		var_dump($img);
+		$image_name = $img['name'];
 		//permet de recupere l'extension du fichier
 		$ext = strtolower(substr(strrchr($image_name,'.'),1));
 		//tableau d'extension de fichier autoriser
 		$ext_aut = array('jpg','jpeg','png','gif');
-			
-		/**
-		 * check_extension
-		 * verifie les extension autorisé
-		 * @param  mixed $ext
-		 * @param  mixed $ext_aut
-		 * @return void
-		 */
-		function check_extension($ext,$ext_aut)
-		{
-			if(in_array($ext,$ext_aut))
-			{
-				return true;
-			}
-		}
 		
-		$valid = (!check_extension($ext,$ext_aut)) ? false : true;
-		$erreur = (!check_extension($ext,$ext_aut)) ? 'Veuillez charger une image' : '';
-		
+		$valid = in_array($ext,$ext_aut);
+		$erreur = $valid ? "" : "Veuillez charger une image";
+
 		if($valid)
 		{
 			//taille max de l'image
