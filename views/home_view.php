@@ -179,10 +179,10 @@
                         <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
                         <figcaption class="col-12 item__body">
                             <h3 class="item__title">Titre 1</h3>
-                            <p class="item__description"><?= $article['content']?>
-                                <!-- Description de l'image Lorem ipsum dolor sit amet consectetur
+                            <p class="item__description">
+                                Description de l'image Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Deleniti, odit eligendi. Expedita quisquam tempore nihil fuga, quia
-                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut? -->
+                                maiores quos ut corporis hic, eligendi molestiae? Repellat esse cupiditate magni sed ut?
                             </p>
                         </figcaption>
                     </figure>

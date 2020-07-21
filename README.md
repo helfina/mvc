@@ -10,7 +10,7 @@
 
 <p style ="text-align:center;">
 <a href="https://github.com/helfina/Bleuets-Rose/blob/master/README.MD">
-<img src="public\Image\logobr.png" alt="Logo" width="80" height="80">
+<img src="assets/images/logobr.jpg" alt="Logo" width="80" height="80">
 </a>
 <br>
 <bloquote style="font-size: 9px;">©Tous droit réserver (sur le logo)</bloquote>
@@ -41,6 +41,7 @@
     Mon projet consiste a créez un site vitrine pour une fleuriste
     qui a récement ouvert une deuxieme boutique en decembre 2019
     afin de se faire connaitre dans les environs et la rendre plus visible.
+    
 
 ## Technologie utiliser
 

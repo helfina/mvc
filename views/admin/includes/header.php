@@ -15,16 +15,15 @@
             </a>
             <!-- *****menu******* -->
             <ul class="navbar">
-            <li>
-                    <a href="indexAdmin.php?page=admin">Accueil admin</a>
+                <li>
+                    <a href="index.php?page=home">Accueil</a>
                 </li>
                 <li>
-                    <a href="indexAdmin.php?admin=redaction"> Rédaction/Edition </a>
+                    <a href="index.php?page=galerie"> Galerie</a>
                 </li>
                 <li>
-                    <a href="indexAdmin.php?admin=article">Article</a>
-                </li>
-                
+                    <a href="index.php?page=contact">Contact</a>
+                </li>            
               
             </ul>
         </nav>
