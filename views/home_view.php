@@ -30,7 +30,7 @@
           
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="assets\images\devanturestjean.jpg"
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12 stJeanImg" src="assets/images/devanturestjean.jpg"
                         alt="devanture magasins de st jean brevelay">
                        
                    
@@ -47,15 +47,8 @@
                         </address>  
 
                        
-
+                        <h5>Horaires</h5>
                         <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <h5>Horaires</h5>
-                                    </th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
@@ -114,15 +107,9 @@
                             56390 Grand-Champ<br>
                             <a href="tel:+33952461614">Tel : 09.52.46.16.14</a>
                         </address>
-
+                        <h5>Horaires</h5>
                         <table class="mobile-12 tablette-12 pc-12 l-12 col-12">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <h5>Horaires</h5>
-                                    </th>
-                                </tr>
-                            </thead>
+                            
                             <tbody>
                                 <tr>
                                     <td class="day">Lundi</td>
@@ -176,7 +163,7 @@
 
              
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/compopot.jpg" alt="#">
                         <figcaption class="col-12 item__body">
                             <h3 class="item__title">Titre 1</h3>
                             <p class="item__description">
@@ -189,7 +176,7 @@
            
 
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/compopot.jpg" alt="#">
                         <figcaption class="item__body">
                             <h3 class="item__title">Titre 2</h3>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -200,7 +187,7 @@
 
                     </figure>
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\compopot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/compopot.jpg" alt="#">
                         <figcaption class="item__body">
                             <h3 class="item__title">Titre 3</h3>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -214,7 +201,7 @@
 
                 <div class="row blockTwo">
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\plantepot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/plantepot.jpg" alt="#">
                         <figcaption class="item__body">
                             <h3 class="item__title">Titre 4</h3>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur,
@@ -224,7 +211,7 @@
                         </figcaption>
                     </figure>
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\plantepot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/plantepot.jpg" alt="#">
                         <figcaption class="item__body">
                             <h3 class="item__title">Titre 5</h3>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
@@ -233,7 +220,7 @@
                         </figcaption>
                     </figure>
                     <figure class="pc-2 l-3 col-3 item">
-                        <img class="img_resp item__image" src="assets\images\plantepot.jpg" alt="#">
+                        <img class="img_resp item__image" src="assets/images/plantepot.jpg" alt="#">
                         <figcaption class="item__body">
                             <h3 class="item__title">Titre 6</h3>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
