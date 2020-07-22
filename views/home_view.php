@@ -21,11 +21,10 @@
     <main class="container">
         
     <section class="row Boutiques">
-          
+          <!-- <h2 class="col-12">Nos Boutiques</h2> -->
 
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
-            
-   
+               
                 <h3>St-Jean-brevelay</h3>
           
                 <figure class="row">
@@ -91,9 +90,7 @@
                     </figcaption>
                 </figure>
             </article>
-
-                     
-        
+       
             <article class="mobile-12 tablette-12 pc-6 l-6 col-6">
                 <h3>Grand-champ</h3>
                 <figure class="row">
@@ -173,8 +170,6 @@
                             </p>
                         </figcaption>
                     </figure>
-           
-
                     <figure class="pc-2 l-3 col-3 item">
                         <img class="img_resp item__image" src="assets/images/compopot.jpg" alt="#">
                         <figcaption class="item__body">
@@ -265,7 +260,7 @@
 
             <article class="row">
                 <aside class="mobile-12 tablette-12 pc-5 l-5 col-5">
-                    <div id=" fb-root"></div>
+                    <div id="fb-root"></div>
 
                     <script async defer crossorigin="anonymous"
                         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1">
