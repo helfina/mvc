@@ -95,7 +95,7 @@
                 <h3>Grand-champ</h3>
                 <figure class="row">
 
-                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets\images\devantureGC.jpg"
+                    <img class="img-resp mobile-12 tablette-12 pc-12 l-12 col-12" src="assets/images/devantureGC.jpg"
                         alt="devanture">
 
                     <figcaption class="row">
@@ -227,13 +227,13 @@
                 </div>
 
                 <div class="precedent" onclick=" ChangeSlide(-1) ">
-                    <svg whidth="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" >
+                    <svg whidth="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" >
                         <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                         <path d="M0 0h24v24H0z" fill="none" />
                     </svg>
                 </div>
                 <div class="suivant" onclick=" ChangeSlide (1) ">
-                    <svg whidth="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" >
+                    <svg whidth="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" >
                         <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
                         <path d="M0 0h24v24H0z" fill="none" />
                     </svg>
@@ -277,7 +277,7 @@
                 </aside>
 
                 <aside class="mobile-12 tablette-12 pc-5 l-5 col-5">
-                    <div id="fb-root"></div>
+                    <!-- <div id="fb-root"></div> -->
                     <script async defer crossorigin="anonymous"
                         src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1">
                     </script>
