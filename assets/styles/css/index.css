@@ -1,0 +1,143 @@
+body {
+  /* ===================================================
+                              SLIDER
+  =================================================*/
+  /*=============Galerie==================*/
+}
+body .slider {
+  margin-top: 1%;
+}
+body .slider img {
+  /* je lui met une 
+  hauteur de  600px pour que l'image
+  ne soit pas trop haute */
+  max-height: 550px;
+}
+body .Galerie article {
+  transition: transform 0.3s;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  display: inline-flex;
+  align-items: center;
+}
+body .Galerie .item {
+  background-color: #fff;
+  box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+  transition: transform 0.3s;
+  transform: translate3d(0, -1px, 0);
+  -webkit-transform: translate3d(0, -1px, 0);
+  -moz-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  -o-transform: translate3d(0, -1px, 0);
+}
+body .Galerie .item:hover {
+  transform: translate3d(0, -10px, 0);
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  -ms-transform: translate3d(0, -10px, 0);
+  -o-transform: translate3d(0, -10px, 0);
+}
+body .Galerie .item__image {
+  width: 100%;
+  max-height: 450px;
+}
+
+/* ========================================================
+                            Boutique
+======================================================== */
+.Boutiques article {
+  padding: 2%;
+}
+.Boutiques article img {
+  /* je definie sa hauteur max je met un important pour que sa passe avant la config img-fluid*/
+  height: 437px;
+}
+.Boutiques article address {
+  padding: 1%;
+  text-align: center;
+}
+.Boutiques article address a {
+  color: black;
+}
+.Boutiques article .day {
+  font-weight: 700;
+}
+
+/* ==============Actu================== */
+.Actu aside {
+  display: flex;
+  justify-content: center;
+}
+.Actu article {
+  margin-bottom: 5%;
+}
+.Actu a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+.Actu a svg.svg-inline--fa.fa-facebook.fa-w-16 {
+  width: 15%;
+  color: #1e06f7;
+}
+
+/*====================================================*\
+                    MEDIAQUERIES
+\*====================================================*/
+/*----------------------Mobile-------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .Boutiques article img {
+    max-height: 150px;
+  }
+
+  .Galerie {
+    display: none;
+  }
+
+  .Actu aside {
+    display: none;
+  }
+  .Actu svg.svg-inline--fa.fa-facebook.fa-w-16 {
+    width: 30% !important;
+  }
+}
+/*----------------------phablette-------------------------*/
+@media only screen and (min-width: 479px) and (max-width: 768px) {
+  .Boutiques article img {
+    max-height: 200px;
+  }
+
+  .Galerie {
+    display: none;
+  }
+
+  .Actu aside {
+    margin: 5% 3%;
+  }
+  .Actu svg.svg-inline--fa.fa-facebook.fa-w-16 {
+    width: 20% !important;
+  }
+}
+/*----------------------Tablette-------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Boutiques article img {
+    max-height: 200px;
+  }
+
+  .Galerie p, .Galerie h4 {
+    display: none;
+  }
+
+  .Actu aside {
+    margin: 5% 3%;
+  }
+}
+/*----------------------grand ecran de pc-------------------------*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .Galerie p.item__description {
+    display: none;
+  }
+}

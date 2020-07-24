@@ -1,0 +1,57 @@
+footer {
+  color: whitesmoke;
+  background-color: #08090E;
+}
+footer h2 {
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+}
+footer .end {
+  font-size: small;
+  padding: 5px;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+.bloc_footer {
+  font-size: small;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.bloc_footer .ad_boutique address {
+  /*j'aligne mes deux div  cote a cote*/
+  display: flex;
+  margin: 5px;
+  width: 100%;
+}
+.bloc_footer .ad_boutique address p {
+  padding: 5px;
+  margin: 5px;
+}
+.bloc_footer .liens {
+  padding: 5px;
+}
+.bloc_footer .liens ul {
+  text-align: center;
+  list-style-type: none;
+}
+.bloc_footer .logo_partenaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bloc_footer .logo_partenaire a {
+  width: 40%;
+  padding: 5px;
+}
+.bloc_footer .logo_partenaire img {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border: 3px solid #E6B3F2;
+}

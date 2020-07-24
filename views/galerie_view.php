@@ -8,7 +8,7 @@
 
 </head>
 
-<body class="xlcontainer">
+<body class="container">
 
     <?php include_once 'views/includes/header.php'?>
 
@@ -20,161 +20,115 @@
 
         <section class="row filtre">
 
-            <button class="mobile-5 l-2 col-2 btn active" onclick="filterSelection('all')">Toutes les catégories</button>
-            <button class="mobile-5 l-2 col-2 btn" onclick="filterSelection('mariage')">Mariage</button>
-            <button class="mobile-5 l-2 col-2 btn" onclick="filterSelection('deces')">Décès</button>
-            <button class="mobile-5 l-2 col-2 btn" onclick="filterSelection('St_valentin')">St Valentin</button>
+            <button class="col-s-3 pc-1 col-1 btn active" onclick="filterSelection('all')">Toutes les catégories</button>
+            <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('mariage')">Mariage</button>
+            <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('deces')">Décès</button>
+            <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('St_valentin')">St Valentin</button>
 
         </section>
 
-        <section class="photos">
+        <section class="container photos">
 
             <article class="row mariage">
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                     <figcaption class="item__body">
                         <h3 class="item__title">Titre 1</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 2</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 3</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 5</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-
-                </figure>
-
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopotfleur.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 6</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
             </article>
 
             <article class="row deces">
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 5</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 6</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 5</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compopot.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 6</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
-
+                
             </article>
 
             <article class="row St_valentin">
 
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 4</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="img-fluid item__title">Titre 5</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
                     <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="img-fluid item__title">Titre 6</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
-                    </figcaption>
-                </figure>
-
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
+                    <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 5</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <figcaption class="item__body ">
+                        <h3 class="img-resp item__title">Titre 5</h3>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-                <figure class="mobile-12 tablette-3 pc-3 l-3 col-3 item">
-                    <img class="img-fluid item__image" src="assets\images\compoflorale.jpg" alt="#">
-                    <figcaption class="item__body">
-                        <h3 class="item__title">Titre 6</h3>
-                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend. Sed lobortis, sem id molestie molestie, sapien ipsum tincidunt velit, vitae semper lectus quam id nulla. Morbi faucibus risus id blandit molestie</p>
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <figcaption class="item__body ">
+                        <h3 class="img-resp item__title">Titre 6</h3>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
-
+                <figure class="col-s-12 col-ps-4 col-txs-2 col-tm-2 col-2 item">
+                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <figcaption class="item__body ">
+                        <h3 class="item__title">Titre 4</h3>
+                        <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
+                    </figcaption>
+                </figure>
+               
             </article>
 
         </section>

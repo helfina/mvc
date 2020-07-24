@@ -1,0 +1,203 @@
+body {
+    
+    /* ===================================================
+                                SLIDER
+    =================================================*/
+        .slider{
+            margin-top: 1%;
+            img {
+                /* je lui met une 
+                hauteur de  600px pour que l'image
+                ne soit pas trop haute */
+                max-height: 550px;
+            }
+        }
+    
+    /*=============Galerie==================*/
+    
+    .Galerie {
+    
+        article{
+            transition: transform 0.3s;
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            display: inline-flex;
+            align-items: center;
+        }
+        .item{
+    
+            background-color: #fff;
+            box-shadow: 0 15px 35px #3232321a, 0 5px 15px #0000001a;
+            transition: transform 0.3s;
+            transform: translate3d(0, -1px, 0);
+            -webkit-transform: translate3d(0, -1px, 0);
+            -moz-transform: translate3d(0, -1px, 0);
+            -ms-transform: translate3d(0, -1px, 0);
+            -o-transform: translate3d(0, -1px, 0);
+        }
+        .item:hover {
+            transform: translate3d(0, -10px, 0);
+            -webkit-transform: translate3d(0, -10px, 0);
+            -moz-transform: translate3d(0, -10px, 0);
+            -ms-transform: translate3d(0, -10px, 0);
+            -o-transform: translate3d(0, -10px, 0);
+        }
+        .item__image{
+            width: 100%;
+            max-height: 450px;
+        }
+    
+    }
+    } 
+    /* ========================================================
+                                Boutique
+    ======================================================== */   
+    .Boutiques{
+        
+    
+        article{
+            padding: 2%;
+            img{ 
+                /* je definie sa hauteur max je met un important pour que sa passe avant la config img-fluid*/
+                height: 437px;  
+        
+            }
+    
+            address{
+                padding: 1%;
+                text-align: center;
+                a{
+                    color: black;
+                }
+            }
+    
+            .day{
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+    /* ==============Actu================== */
+    .Actu {
+    
+        aside{
+            display: flex;
+            justify-content: center;
+        }
+        article{
+        margin-bottom: 5%;
+        }
+        
+        a {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+    
+                svg.svg-inline--fa.fa-facebook.fa-w-16 {
+                    width: 15%;
+                    color: #1e06f7;
+                }
+         } 
+    }
+    
+    /*====================================================*\
+                        MEDIAQUERIES
+    \*====================================================*/
+    /*----------------------Mobile-------------------------*/
+    $mobileS: 320px;
+    $mobileM: 479px;
+    
+    @media only screen and(min-width: $mobileS) and (max-width: $mobileM){
+       
+        .Boutiques{
+            article{
+                img{
+                    max-height: 150px;
+                }
+            }
+        }
+        .Galerie{
+             
+                 display: none;
+        
+        }
+        .Actu{
+            aside{
+               display: none;
+            }
+            svg.svg-inline--fa.fa-facebook.fa-w-16 {
+                width: 30%!important;
+            }
+        }
+    
+    }
+
+    /*----------------------phablette-------------------------*/
+    $tabletteS: 768px;
+    @media only screen and(min-width: $mobileM) and (max-width: $tabletteS){
+          .Boutiques{
+            article{
+                img{
+                    max-height: 200px;
+                }
+            }
+        }
+        .Galerie{
+             
+                 display: none;
+        
+        }
+        .Actu{
+            aside{
+           margin: 5% 3%;
+            }
+            svg.svg-inline--fa.fa-facebook.fa-w-16 {
+                width: 20%!important;
+            }
+         
+        }
+    
+    
+    }
+
+    /*----------------------Tablette-------------------------*/
+    $pc: 1024px;  
+    @media only screen and(min-width: $tabletteS) and (max-width: $pc){
+            .Boutiques{
+            article{
+                img{
+                    max-height: 200px;
+                }
+            }
+        }
+       .Galerie{
+           p,h4{
+               display: none;
+           }
+       }
+        .Actu{
+            
+            aside{      
+
+                margin: 5% 3%;
+                  
+            }
+             
+        }
+    
+    }
+    
+/*----------------------grand ecran de pc-------------------------*/
+    $pcHD: 1200px;
+    @media only screen and(min-width: $pc) and (max-width: $pcHD){
+        .Galerie{
+            p.item__description {
+                display: none;
+            }
+           }
+    }
+    

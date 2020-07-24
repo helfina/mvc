@@ -1,48 +1,267 @@
-*{
-     box-sizing: border-box;
-   
+* {
+    box-sizing: border-box;
+
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'BioRhyme', serif; 
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: 'BioRhyme', serif;
+
+    h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: 'Merienda', cursive;
+        text-align: center;
+        padding: 2%;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 1.75rem;
+        font-family: 'Merienda', cursive;
+        text-align: center;
+        padding: 2%;
+    }
+    h3,h4{
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Merienda', cursive;
+        font-size: 1.5rem;
+        padding: 2%;
+
+    }
+    
+    h5,h6{
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Merienda', cursive;
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    li {
+        /* j'enleve les puce de liste */
+        list-style-type: none;
+    }
+
+    table {
+        max-width: 100%;
+        height: auto;
+        margin: 5px;
+        border: 3px double black;
+        font-family: 'Quicksand', sans-serif;
+        table-layout: auto;
+
+        th,
+        td {
+            vertical-align: middle;
+        }
+    }
+     /*============Fil d'ariane / breadcrumb===============*/
+     .ariane {
+        font-family: 'Quicksand', sans-serif;
+        font-size: medium;
+        margin-top: 1%;
+        margin-left: 5%;
+
+        a {
+            padding-right: 5px;
+            color: black;
+        }
+        a:hover {
+            border-radius: 40%;
+            background-color: #D7C5FA;
+            -webkit-border-radius: 40%;
+            -moz-border-radius: 40%;
+            -ms-border-radius: 40%;
+            -o-border-radius: 40%;
+        }
+        
+    }
+
+
 }
 
-$columns: 12!default;
-$gutter: 20px!default;
 
-%col{
+
+/*---------------------------------------------------*\
+                    VARIABLES
+\*---------------------------------------------------*/
+$columns: 12 !default;
+$gutter: 20px !default;
+$mobileS: 320px;
+$mobileM: 479px;
+$PhabletS : 550px;
+$PhabletM : 640px;
+$tabletteXS: 720px;
+$tabletteS: 768px;
+$tabletteM: 850px;
+$tabletteL: 980px;
+$pc: 1024px;
+$pcHD: 1200px;
+$tv: 1919px;
+
+/*---------------------------------------------------*\
+                    MIXINS
+\*---------------------------------------------------*/
+@mixin resp-col($suffix: '') {
+    @for $i from 1 through $columns {
+        @if $i !=0 {
+            .col#{$suffix}-#{$i} {width: $i / 12 * 100%;}
+        }
+        .col#{$suffix}-center{ margin: 0 auto; float: none; }
+        .col#{$suffix}-push-#{$i}{ left:$i / $columns * 100%; }
+        .col#{$suffix}-offset-#{$i}{ margin-left:$i / $columns * 100%; }
+        .col#{$suffix}-pull-#{$i}{ left:$i / $columns * 100%; }
+        .col#{$suffix}-hidden-#{$i}{ display: none; }
+        .col#{$suffix}-show-#{$i}{ display: block; }
+    }
+}
+
+/*---------------------------------------------------*\
+                    EXTENDS
+\*---------------------------------------------------*/
+
+%col {
     float: left;
     position: relative;
     min-height: 1px;
     padding: 0 $gutter * 0.5;
 
-    background-color: grey;
-    border: 1px solid black;
 }
 
+%clearfix {
 
-@for $i from 1 through $columns{
-    .col-#{$i}{
-        @extend %col;
-        width:$i / 12 * 100%; }
-}
-
-@media only screen and(min-width: 640px){
-    @for $i from 1 through $columns{
-        .col-m-#{$i}{
-            @extend %col;
-            width:$i / 12 * 100%; }
-    }    
-}
-
-@media only screen and(min-width: 1040px){
-    @for $i from 1 through $columns{
-        .col-m-#{$i}{
-            @extend %col;
-            width:$i / 12 * 100%; }
+    &:before,
+    &:after {
+        content: "";
+        display: table;
     }
-    
+
+    &:after {
+        clear: both;
+    }
+
+    & {
+        *zoom: 1;
+    }
+}
+
+/*---------------------------------------------------*\
+                    CLASS
+\*---------------------------------------------------*/
+.container{
+    margin: auto;
+}
+
+.row {
+  /*aligne toi*/
+  display: flex;
+  flex-direction: row;
+  /*retourne a la ligne si ta plus de place*/
+  flex-wrap: wrap;
+  /*je met un peu d'espace entre chaque element*/
+  justify-content: center;
+    margin: $gutter * 0.5;
+    @extend %clearfix;
+}
+.img-resp {
+    max-width: 100%;
+    height: auto;
+}
+/*---------------------------------------------------*\
+                    GRILLE
+\*---------------------------------------------------*/
+
+@for $i from 1 through $columns {
+     .col-#{$i},.col-ms-#{$i},.col-ml-#{$i},.col-ps-#{$i}, .col-pm-#{$i},
+    .col-txs-#{$i},.col-ts-#{$i},.col-tm-#{$i},.col-tl-#{$i},.col-pcs-#{$i},
+    .col-pc-#{$i},.col-tv-#{$i} {
+        @extend %col;
+       
+    }
+}
+@include resp-col();
+/*=============================================/
+                MEDIAQUERIES
+
+$mobileS: 320px;
+$mobileM: 479px;
+$PhabletS : 550px;
+$PhabletM : 640px;
+$tabletteXS: 720px;
+$tabletteS: 768px;
+$tabletteM: 820px;
+$tabletteL: 992px;
+$pc: 1024px;
+$pcHD: 1200px;
+$tv: 1919px;
+/=============================================*/
+/*---------------------------------------------------*\
+                    mobile
+\*---------------------------------------------------*/
+@media only screen and(min-width: $mobileS) {
+    @include resp-col('-s');
+    .col-s-hidden{display: none;}
+
+}
+@media only screen and(min-width: $mobileM) {
+    @include resp-col('-m');
+
+}
+/*---------------------------------------------------*\
+                    Phablette
+\*---------------------------------------------------*/
+@media only screen and(min-width: $PhabletS) {
+    @include resp-col('-ps');
+
+}
+@media only screen and(min-width: $PhabletM) {
+    @include resp-col('-pm');
+
+}
+/*---------------------------------------------------*\
+                    tablette
+\*---------------------------------------------------*/
+@media only screen and(min-width: $tabletteXS) {
+    @include resp-col('-txs');
+
+}
+@media only screen and(min-width: $tabletteS) {
+    @include resp-col('-ts');
+
+}
+@media only screen and(min-width: $tabletteM) {
+    @include resp-col('-tm');
+
+}
+@media only screen and(min-width: $tabletteL) {
+    @include resp-col('-tl');
+
+}
+@media only screen and(min-width: $pc) {
+    @include resp-col('-pc');
+
+}
+@media only screen and(min-width: $pcHD) {
+    @include resp-col('-pcl');
+
+}
+/*---------------------------------------------------*\
+                    tv
+\*---------------------------------------------------*/
+@media tv {
+    @include resp-col('-tv');
+
 }
 
