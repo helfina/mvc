@@ -259,7 +259,7 @@
                 </svg>
             </a>
 
-            <article class="row">
+            <div class="row">
                 <aside class="col-s-12 col-tl-6 col-6">
                     <div class="fb-root"></div>
 
@@ -295,7 +295,7 @@
                                 Champ</a></blockquote>
                     </div>
                 </aside>
-            </article>
+            </div>
 
         </section>
 
