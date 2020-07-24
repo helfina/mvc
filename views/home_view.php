@@ -29,7 +29,7 @@
 
                 <figure class="row">
 
-                    <img class="img-resp col-12" src="assets\images\93615128_3473101756038814_3519088746832068608_o.jpg"
+                    <img class="img-resp col-12" src="assets/images/93615128_3473101756038814_3519088746832068608_o.jpg"
                         alt="devanture du magasins de st jean brevelay">
 
 
@@ -92,7 +92,7 @@
 
                 <figure class="row">
 
-                    <img class="img-resp col-12" src="assets\images\94270775_109297020750630_2813684696821530624_o.jpg"
+                    <img class="img-resp col-12" src="assets/images/94270775_109297020750630_2813684696821530624_o.jpg"
                         alt="devanture du magasin de Grand Chamd">
 
                     <figcaption class="row">
@@ -204,7 +204,7 @@
                 <div class="row blockTwo">
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
+                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 4</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur,
@@ -215,7 +215,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
+                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 5</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
@@ -225,7 +225,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
+                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 6</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
