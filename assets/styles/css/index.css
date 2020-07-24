@@ -52,6 +52,7 @@ body .Galerie .item__image {
   padding: 2%;
 }
 .Boutiques article img {
+  width: 80%;
   /* je definie sa hauteur max je met un important pour que sa passe avant la config img-fluid*/
   height: 437px;
 }
