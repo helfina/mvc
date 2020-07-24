@@ -1,9 +1,9 @@
 let imgs = [
-    "assets/images/slider/compofleurrose.jpg", 
-    "assets/images/slider/compoplante.jpg",
-    "assets/images/slider/compofloral.jpg",
-    "assets/images/devantureGC.jpg",
-    "assets/images/devanturestjean.jpg"
+    "assets/images/slider/13923533_1387945637887780_3845945640515613113_o.jpg", 
+    "assets/images/slider/13923533_1387945637887780_3845945640515613113_o.jpg",
+    "assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg",
+    "assets/images/94270775_109297020750630_2813684696821530624_o.jpg",
+    "assets/images/93615128_3473101756038814_3519088746832068608_o.jpg"
 ];
 let index = 0;
 
