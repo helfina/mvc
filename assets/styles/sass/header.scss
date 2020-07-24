@@ -1,0 +1,53 @@
+header {
+    // height: 3.472222%;
+    display: flex;
+    background-color: #08090E;
+
+    a {
+        width: 10%;
+        color: white;
+    }
+
+    .logo {
+        padding: 5%;
+        margin-left: 10%;
+        // height: auto;
+        width: 30%;
+    }
+
+    .menu_ {
+        display: flex;
+
+        .icon svg {
+            display: none;
+        }
+
+        .navbar {
+            display: flex;
+
+            li {
+                font-size: 20px;
+                margin-right: 10%;
+                /*aligner les svg et li*/
+                display: inline-flex;
+                align-items: center;
+            }
+
+            li:hover {
+                height: 15%;
+                background-color: #562F83;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
+
+            /* =============== class active ==================== */
+            .active {
+                background-color: #f10b0b;
+            }
+
+        }
+    }
+}
