@@ -1,71 +1,87 @@
 footer{
     color: whitesmoke;
     background-color: #08090E;
+    font-size: small;
 
-    h2 {
+    h5{
         text-align: center;
         font-weight: 700;
-        padding: 10px;
     }
     
     .end {
-        font-size: small;
-        padding: 5px;
+        font-size: smaller;
         text-align: center;
     }
     a{
         color: white;
     }
-    
-}
-
-.bloc_footer {
-    font-size: small;
-    margin: 10px;
-    display: flex;
-    justify-content: space-around;
-
-    .ad_boutique{
-
-        address{
-         /*j'aligne mes deux div  cote a cote*/
-         display: flex;
-         margin: 5px;
-         width: 100%;
-            
-            p{
-                padding: 5px;
-                margin: 5px;
+    div>.address_boutique>address>div{
+        text-align: center;
+    }
+    div>.partenaire>aside{
+            align-items: center;
+            a{
+                width: 23%;
             }
-         }
-       
-    }
-    .liens{
-        padding: 5px;
-        ul{
-            text-align: center;
-            list-style-type: none;
-        }
-    }
-    .logo_partenaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+            img { 
+                background-color: white;
+                width: 100%;
+                height: 50px;
+                border: 2px solid #E6B3F2;
+            }
 
-        a {   
-            width: 40%;
-            padding: 5px;
+    }
+    div>.liens>ul{
+        li{
+            text-align: center;
         }
-        img { 
-            background-color: white;
-             width: 100%;
-             height: auto;
-             border: 3px solid #E6B3F2;
-         }
     }
     
-   
 }
 
-
+$mobileS: 320px;
+$mobileM: 479px;
+$PhabletS : 550px;
+$PhabletM : 640px;
+$tabletteXS: 720px;
+$tabletteS: 768px;
+$tabletteM: 820px;
+$tabletteL: 992px;
+$pc: 1024px;
+$pcHD: 1200px;
+$tv: 1919px;
+@media only screen and(min-width: $mobileS) and(max-width: $mobileM) {
+  
+    footer{ 
+        div>.partenaire>aside>a {
+            width: 51%;
+        }
+        div>.liens>ul{
+            li{
+                text-align: center;
+            }
+        }
+    }
+}
+@media only screen and(min-width: 480px) and(max-width: $PhabletM) {
+  
+    footer{ 
+        div>.partenaire>aside>a {
+            width: 35%;
+        }
+        div>.liens>ul{
+            li{
+                text-align: center;
+            }
+        }
+    }
+}
+@media only screen and(min-width: $tabletteXS) and(max-width: $tabletteM) {
+  
+    footer{ 
+        div>.partenaire>aside>a {
+            width: 50%;
+        }
+        
+    }
+}
