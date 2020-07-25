@@ -1,8 +1,7 @@
 <!-- Meta Tags -->
 <!-- <meta charset="UTF-8" /> -->
 <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
-<meta name="viewport"
-    content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
 <meta name="author" content="<?= WEBSITE_AUTHOR?>">
 <meta name="description" content="<?= WEBSITE_DESCRIPTION?>" />
 <meta name=”keywords” content="<?= WEBSITE_KEYWORDS?>" />
@@ -40,9 +39,9 @@
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/grille.min.css">
 
-<link rel="stylesheet" href="<?= PATH?>assets/styles/css/footer.min.css">
+<link rel="stylesheet" href="<?= PATH?>assets/styles/css/footer.css">
 
-<link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaheaderfooter.css">
+<!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaheaderfooter.css"> -->
 
 <!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaindex.css"> -->
 

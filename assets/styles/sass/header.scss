@@ -1,18 +1,18 @@
-header {
+header.header{
     // height: 3.472222%;
     display: flex;
     background-color: #08090E;
-
-    a {
+    a{
+        color: white;        
+    }
+    a.logo{
         width: 10%;
-        color: white;
     }
 
-    .logo {
+    a>img.logo {
         padding: 5%;
         margin-left: 10%;
-        // height: auto;
-        width: 30%;
+        width: 24%;
     }
 
     .menu_ {
@@ -50,4 +50,185 @@ header {
 
         }
     }
+}
+
+$mobileS: 320px;
+$mobileM: 479px;
+
+@media only screen and(min-width: $mobileS)and(max-width: $mobileM){
+   
+    header.header{
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-size: small;
+
+            a.logo {
+               img.logo{
+                position: relative;
+                z-index: 5;
+                width: 86%;  
+               }              
+            }
+            
+       
+        nav{
+            a.icon {
+                left: 0;
+                width: 23%;
+            }
+            /*jaffiche licone de mon menu*/
+            a.icon>svg {
+                display: inline-block!important;
+                cursor: pointer;
+                width: 55%;
+            }
+            /*je cache mon menu*/
+            ul.navbar {
+                display: none!important;
+            }
+            
+        }
+        /*==================MENU - HAMBURGER======*/
+        nav.menu_responsive{
+           
+            a.icon>svg {
+                width: 10%;
+            }
+            ul.navbar {
+                display: flex !important;
+                position: absolute;
+                z-index: 1;
+                background-color:  #08090E;
+                margin: 0;
+                width: 100%;
+            }
+            ul.navbar>li:first-child{
+                margin-left: -7%;
+                margin-right: 5%;
+                
+            }
+            ul.navbar>li{
+                margin-right: 5%;
+                
+            }
+            
+        } 
+        
+    }
+}
+$PhabletM : 640px;
+
+@media only screen and(min-width: 480px) and(max-width: $PhabletM){
+    header{
+        font-size: small;
+        a.logo{
+            
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 70%!important;
+            }
+        }
+    } 
+}
+
+$tabletteXS: 720px;
+@media only screen and(min-width: 641px) and(max-width: $tabletteXS){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 56%!important;
+            }
+        }
+    } 
+}
+$tabletteS: 768px;
+@media only screen and(min-width: 721px) and(max-width: $tabletteS){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 48%!important;
+            }
+        }
+    } 
+}
+$tabletteM: 820px;
+@media only screen and(min-width: 769px) and(max-width: $tabletteM){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 45%!important;
+            }
+        }
+    } 
+}
+$tabletteL: 992px;
+@media only screen and(min-width: 769px) and(max-width: $tabletteL){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 38%!important;
+            }
+        }
+    } 
+}
+$pc: 1024px;
+@media only screen and(min-width: 769px) and(max-width: $pc){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 36% !important;
+            }
+        }
+    } 
+}
+$pcHD: 1200px;
+@media only screen and(min-width: 1025px) and(max-width: $pcHD){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 32% !important;
+            }
+        }
+    } 
+}
+
+@media only screen and(min-width: 1201px) and(max-width: 1440px){
+    header{
+        font-size: small;
+        a.logo{
+
+            img.logo {
+                position: relative;
+                z-index: 10;
+                width: 27% !important;
+            }
+        }
+    } 
 }
