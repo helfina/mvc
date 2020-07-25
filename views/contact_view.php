@@ -15,69 +15,69 @@
         <a href="index.php?page=home">Accueil > </a><a href="index.php?page=galerie">Galerie > </a> Contact
     </p>
 
-    <main class="container pageContact">
-        <h1>Bleuets Rose</h1>
+    <main class="container">       
+
         <section class="row contact">
-        
+            <h1 class="col-12">Bleuets Rose</h1>
   
-            <form class="mobile-12 tablette-12 pc-6 col-6" action="" method="post">
+            <form class="col-s-12 col-ts-6 col-6" action="" method="post">
             <?php if (!empty($envoi)) { echo "<h2>$envoi</h2>";} ?>
             <?php if (!empty($error)) { echo "<h2>$error</h2>";} ?>
 
-                <fieldset class="row formulaire">
-                    <legend class="mobil-12 tablette-12 col-12">
+                <fieldset class="row">
+                    <legend class="col-12">
                         Contactez Nous !
                     </legend>
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="nom">Nom</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="nom" id="nom" required>
+                    <label class="col-12" for="nom">Nom</label>
+                    <input class="col-12" type="text" name="nom" id="nom" required>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="prenom">Prénom</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="prenom" id="prenom"
+                    <label class="col-12" for="prenom">Prénom</label>
+                    <input class="col-12" type="text" name="prenom" id="prenom"
                         required>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="cp">Code Postal</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="cp" id="cp">
+                    <label class="col-12" for="cp">Code Postal</label>
+                    <input class="col-12" type="text" name="cp" id="cp">
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="ville">Ville</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="ville" id="ville" required>
+                    <label class="col-12" for="ville">Ville</label>
+                    <input class="col-12" type="text" name="ville" id="ville" required>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for=" adresse">Adresse</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="adresse" id="adresse">
+                    <label class="col-12" for=" adresse">Adresse</label>
+                    <input class="col-12" type="text" name="adresse" id="adresse">
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="tel">Téléphone</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="tel" name="tel" id="tel" required>
+                    <label class="col-12" for="tel">Téléphone</label>
+                    <input class="col-12" type="tel" name="tel" id="tel" required>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="email">E-mail</label>
-                    <input class="mobile-12 tablette-12 pc-12 l-12 col-12" type="text" name="email" id="email" required>
+                    <label class="col-12" for="email">E-mail</label>
+                    <input class="col-12" type="text" name="email" id="email" required>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="objet">Objet</label>
-                    <textarea class="mobile-12 tablette-12 pc-12 l-12 col-12" name="objet" id="objet"></textarea>
+                    <label class="col-12" for="objet">Objet</label>
+                    <textarea class="col-12" name="objet" id="objet"></textarea>
 
-                    <label class="mobile-12 tablette-12 pc-12 l-12 col-12" for="msg">Message</label>
-                    <textarea class="mobile-12 tablette-12 pc-12 l-12 col-12" name="msg" id="msg"></textarea>
+                    <label class="col-12" for="msg">Message</label>
+                    <textarea class="col-12" name="msg" id="msg"></textarea>
 
-                    <span class="mobile-12 tablette-12 pc-12 l-12 col-12" id="feedback"></span>
+                    <span class="col-12" id="feedback"></span>
 
-                    <div class=" row btn ">
-                        <button class="mobile-4 tablette-3 pc-3 col-2" name='contactSend' id="click" type="submit">Envoie</button>
-                        <button class="mobile-4 tablette-3 pc-3 col-2" name='contactAnnule' type="reset" id="reset">Annuler</button>
+                    <div class=" row btn">
+                        <button class="col-s-5 col-ps-3 col-txs-3 col-2" name='contactSend' id="click" type="submit">Envoie</button>
+                        <button class="col-s-5 col-ps-3 col-txs-3 col-2" name='contactAnnule' type="reset" id="reset">Annuler</button>
                     </div>
 
                 </fieldset>
      
             </form>
 
-            <article class="mobile-12 tablette-12 pc-6 l-6 col-6 infoMag">
+            <article class="col-s-12 col-ts-6 col-6">
 
-                <div class="row" id="st_jean">
+                <aside class="row" id="st_jean">
 
-                    <address class="mobile-12 tablette-12 pc-12 l-12 col-3">
+                    <address class="col-s-12 col-pcl-4 col-6">
                         2 Rue de buléon<br>
                         56660 Saint-Jean-Brevelay<br>
-                        <a href="0297604165">Tel : 02.97.60.41.65</a>
+                        <a href="0297604165" class="tel">Tel : 02.97.60.41.65</a>
                     </address>
 
-                    <table class="mobile-12 tablette-12 pc-12 l-12 col-8 horaireMag">
+                    <table class="col-s-12 col-pcl-8 col-6">
                         <tbody>
                             <tr>
                                 <td class="day">Lundi Mardi Jeudi Vendredi Samedi</td>
@@ -94,17 +94,18 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
 
-                <div class="row" id="grand_champs">
+                </aside>
 
-                    <address class="mobile-12 tablette-12 pc-12 l-12 col-3">
+                <aside class="row" id="grand_champs">
+
+                    <address class="col-s-12 col-pcl-4 col-6">
                         1 route de vannes<br>
                         56390 Grand-Champ<br>
-                        <a href="0952461614"> Tel : 09.52.46.16.14</a>
+                        <a href="0952461614" class="tel"> Tel : 09.52.46.16.14</a>
                     </address>
 
-                    <table class="mobile-12 tablette-12 pc-12 l-12 col-8 horaireMag">
+                    <table class="col-s-12 col-pcl-8 col-6">
                         <tbody>
                             <tr>
                                 <td class="day">Lundi</td>
@@ -126,12 +127,14 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </aside>
+
             </article>
 
-        </section class="container">
+        </section>
+
         <div class="row">
-            <div id="map" class="mobile-12 tablette-12 pc-12 l-12 col-12 map"></div>
+            <div id="map" class="col-12 map"></div>
         </div>
     </main>
     

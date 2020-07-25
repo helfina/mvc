@@ -1,62 +1,87 @@
-.pageContact{
+main {
     font-family: 'BioRhyme', serif;
-}
 
-.formulaire legend {
-    font-family: 'Merienda', cursive;
-    text-align: center;
-    font-size: large;
-}
+    form>fieldset {
+        legend {
+            font-family: 'Merienda', cursive;
+            text-align: center;
+            font-size: large;
+        }
 
-.pageContact .formulaire label {
-    font-size: medium;
-}
+        label {
+            font-size: medium;
+        }
 
-.pageContact .formulaire input,
-.pageContact .formulaire textarea{
-    min-height: 25px;
-    border: none;
-    background-color: aliceblue;
-}
-.pageContact .formulaire #msg{
-    min-height: 100px;
-}
+        input,
+        textarea {
+            min-height: 25px;
+            border: none;
+            background-color: aliceblue;
+        }
 
-.pageContact .btn button {
-        min-height: 20px;
-        margin: 5px 0;
-        font-size: medium;
-        background-color: #E6B3F2;
-        box-shadow: 0 15px 35px #562F83, 0 5px 15px #D7C5FA;
-        border: none;
-}
+        textarea:nth-child(2) {
+            min-height: 100px;
+        }
 
 
-.pageContact .infoMag { 
-    margin-top: 3%;   
-    width: 45%;
+        div.btn>button {
+            min-height: 20px;
+            margin: 2% 3%;
+            font-size: medium;
+            background-color: #E6B3F2;
+            box-shadow: 0 15px 35px #562F83, 0 5px 15px #D7C5FA;
+            border: none;
+        }
+    }
+    article{
+        margin-top: 3%;
 
+            address {
+                align-self: center;
+                font-weight: bold;
+                text-align: center;
+                font-size: medium;
+                height: auto;
+            }
+            address>a{
+                color: black;
+               
+            }
+        
+            table{
+                font-family: 'Quicksand';
+            }
+            table>.day {
+                font-weight: bold;
+            }
+            table>td {
+                padding: 1%;
+            }
+            
+         
+    }
+    div{
+        .map {
+            height: 300px;
+            border: 2px double black;
+        }
+
+    }
 }
 
-.pageContact .infoMag address{
-    align-self: center;
-    font-weight: bold;
-    text-align: center;
-    font-size: medium;
-    height: auto;
+$tabletteS: 768px;
+@media only screen and(min-width: $tabletteS) {
+ 
+    label.col-12 {
+        padding: 0.7%;
+    }
 }
-.horaireMag{
-    font-family: 'Quicksand';
-}
-.pageContact .day { 
-    font-weight: bold;
+$tabletteM: 820px;
+$tabletteL: 992px;
+@media only screen and(min-width: $tabletteM) and (max-width: $tabletteL)  {
+    label.col-12 {
+        padding: 2px;
+    }
 }
 
-.pageContact td {
-    padding: 1%;
-} 
 
-.pageContact .map {
-    height: 300px;
-    border: 2px double black;
-}

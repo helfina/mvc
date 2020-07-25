@@ -1,6 +1,6 @@
 <!-- Meta Tags -->
 <!-- <meta charset="UTF-8" /> -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
 <meta name="viewport"
     content="width=device-width, user-scalable=0, maximum-scale=1, initial-scale=1.0, maximum-scale=1">
 <meta name="author" content="<?= WEBSITE_AUTHOR?>">
@@ -50,7 +50,7 @@
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/cssbr/admin.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/galerie.min.css">
-<link rel="stylesheet" href="<?= PATH?>assets/styles/css/contact.css">
+<link rel="stylesheet" href="<?= PATH?>assets/styles/css/contact.min.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.min.css">
 
 
