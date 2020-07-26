@@ -1,7 +1,8 @@
 .content {
+    font-size: small;
     background: #FFF;
-    margin: 10px;
-    padding: 10px;
+    margin: 3px;
+    height: fit-content;
     border: #777 1px solid;
     label {
         text-align: center;
@@ -12,10 +13,8 @@
         margin: 5px;
     }
     input.submit {
-        display: block;
-        align-items: center;
-        margin-top: 20px;
-        width: 85px;
+        margin-top: 1%;
+        width: 90px;
         cursor: pointer;
         border: 1px solid #222;
         background: #333;
@@ -26,8 +25,9 @@
     input.submit:hover {
         background: #444;
     }
-    select{
-        margin: 5px;
+    select, li{
+        margin: 1px;
+        height: auto;
     }
     .error {
         color: #FF6262;
@@ -36,14 +36,12 @@
     
     .success {
         color: green;
-        font-size: 25px;
+        font-size: larger;
     }
     
     .img {
-        // display: flex;
-        // flex-wrap: wrap;
-        // flex-direction: row;
-        display: inline-flex;
+        display: inline-flex;   
+        flex-wrap: wrap;      
     }
     a{
         color: black;
@@ -52,5 +50,7 @@
         margin-top: 2%;
     }
 }
-
+.row:first-child{
+    max-height: 300px;
+}
 

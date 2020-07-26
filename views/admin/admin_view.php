@@ -15,32 +15,30 @@
     <h1>Administration</h1>
     <main class="row">
 
-    <div class="col-s-12 col-pc-5 content">
-        <h2>Gestions des Admins</h2>
-        <ul class="row">
-            <?php foreach($allAdmins as $admin) : ?>
+        <section class="col-s-12 col-tm-3 col-pc-3 col-3 content">
+            <h2>Gestions des Admins</h2>
+            <ul class="row">
+                <?php foreach($allAdmins as $admin) : ?>
 
-            <li class="col-6">
-                <?= $admin['id'] . ' : ' . $admin['firstname'] ?> <?= $admin['lastname'] ?>
+                <li class="col-12">
+                    <?= $admin['id'] . ' : ' . $admin['firstname'] ?> <?= $admin['lastname'] ?>
 
-                <?php if($admin['confirmer'] == 0){ ?>
+                    <?php if($admin['confirmer'] == 0){ ?>
 
-                - <button type="submit" name="confirmer"><a
-                        href="indexAdmin.php?confirmer=<?= $admin['id']?>">Confirmer</a></button>
+                    <a href="indexAdmin.php?confirmer=<?= $admin['id']?>"> - <button type="submit"
+                            name="confirmer">Confirmer</button></a>
 
-                <?php } ?>
+                    <?php } ?>
 
-                - <button type="submit" name="confirmer"><a
-                        href="indexAdmin.php?supprimer=<?= $admin['id']?>">Supprimer</a></button>
+                    <a href="indexAdmin.php?supprimer=<?= $admin['id']?>">- <button type="submit"
+                            name="confirmer">Supprimer</button></a>
 
-            </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
 
-
-
-        <section class="col-s-12 col-pc-5 content">
+        <section class="col-s-12 col-tm-8 col-pc-8 col-8 content">
             <h2>Upload d'Images</h2>
 
             <?php if(isset($success)):?>
@@ -59,35 +57,35 @@
 
                 <label class="col-12" for="avatar">Charger une photo :</label>
 
-                <input class="col-12 fil" type="file" name="avatar" />
+                <input class="col-12" type="file" name="avatar" />
 
-                
 
-                <select class="col-12" name="categorie" id="">
-                   
+
+                <select class="col-s-12 col-pm-4 col-ts-4 col-pc-4 col-4" name="categorie">
+
                     <?php foreach($allCategories as $allCategories =>$category) : ?>
                     <option value="idCategory"><?= $category['id']. ' : ' . $category['nom']?></option>
                     <?php endforeach;?>
 
                 </select>
-                
-                <select class="col-12" name="shop" id="">
-                        <?php foreach($allShop as $allShop =>$shop) : ?>
+
+                <select class="col-s-12 col-pm-5 col-ts-4 col-pc-4 col-4" name="shop">
+                    <?php foreach($allShop as $allShop =>$shop) : ?>
                     <option value="idShop"><?= $shop['id'] . ' : ' . $shop['nom']?></option>
                     <?php endforeach;?>
 
                 </select>
 
-                <select class="col-12" name="admin" id="">
+                <select class="col-s-12 col-pm-2 col-ts-3 col-pc-3 col-4" name="admin">
 
                     <?php foreach($allAdmins as $allAdmins =>$admin) : ?>
-                        
-                        <option value="idAdmin"><?= $admin['id'] .' : ' . $admin['firstname']?></option>
 
-                        <?php endforeach;?>
+                    <option value="idAdmin"><?= $admin['id'] .' : ' . $admin['firstname']?></option>
+
+                    <?php endforeach;?>
                 </select>
 
-                <input type="submit" class="submit" value="Charger" />
+                <input type="submit" class="submit col-s-center-12 col-center-12" value="Charger" />
 
             </form>
 
@@ -102,11 +100,12 @@
 			while($data = $req->fetch(PDO::FETCH_OBJ)):?>
 
                 <aside class="img">
-                <p><?php echo $data->id;?>
-                    <a  href="./assets/images/fullsize/<?php echo $data->image;?>">
+
+                    <a href="./assets/images/fullsize/<?php echo $data->image;?>">
+                        <?php echo $data->id;?>
                         <img class="img-resp" src="./assets/images/min/<?php echo $data->image;?>" />
                     </a>
-                </p>
+
                 </aside>
 
                 <?php endwhile;?>
@@ -114,9 +113,9 @@
             </div>
 
 
-            </section>
-        
-      
+        </section>
+
+
     </main>
 
     <?php include_once 'includes/footer.php'; ?>

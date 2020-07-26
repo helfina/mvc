@@ -33,7 +33,7 @@
 
 <link rel="stylesheet" href="./assets/styles/css/header.min.css">
 
-<link rel="stylesheet" href="./assets/styles/css/admin.css">
+<link rel="stylesheet" href="./assets/styles/css/admin.min.css">
 
 
 <!-- JS Files -->
