@@ -39,7 +39,7 @@
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/grille.min.css">
 
-<link rel="stylesheet" href="<?= PATH?>assets/styles/css/footer.css">
+<link rel="stylesheet" href="<?= PATH?>assets/styles/css/footer.min.css">
 
 <!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaheaderfooter.css"> -->
 

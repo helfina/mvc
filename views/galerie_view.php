@@ -32,7 +32,7 @@
             <article class="row mariage">
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <img class="item__image" src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet fleure rose">
                     <figcaption class="item__body">
                         <h3 class="item__title">Titre 1</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
@@ -40,7 +40,7 @@
                 </figure>
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <img class="item__image" src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet fleure rose">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 2</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
@@ -48,7 +48,7 @@
                 </figure>
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <img class="item__image" src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet fleure rose">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 3</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
@@ -56,7 +56,7 @@
                 </figure>
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                    <img class="item__image" src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet fleure rose">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
@@ -68,28 +68,28 @@
             <article class="row deces">
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compopot.jpg" alt="bouquet fleure rouge">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compopot.jpg" alt="bouquet fleure rouge">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 5</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compopot.jpg" alt="bouquet fleure rouge">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 6</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compopot.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compopot.jpg" alt="bouquet fleure rouge">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
@@ -101,28 +101,28 @@
             <article class="row St_valentin">
 
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet">
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet">
                     <figcaption class="item__body ">
                         <h3 class="img-resp item__title">Titre 5</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet">
                     <figcaption class="item__body ">
                         <h3 class="img-resp item__title">Titre 6</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets\images\compoflorale.jpg" alt="#">
+                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet >
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
