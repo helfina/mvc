@@ -5,14 +5,14 @@
                 <h3>Nos Boutiques</h3>
                 <address class="row">
                     <div class="col-s-12 col-m-6 col-txs-6 col-tm-6 col-tl-6 col-pc-6 col-6">
-                        <h5>St-Jean-Brevelay</h5>
+                        <strong>St-Jean-Brevelay</strong>
                         1 route de vannes<br>
                         56390 Grand-Champ<br>
                         <a href="tel:+33952461614">Tel : 09.52.46.16.14</a>
                     </div>
 
                     <div class="col-s-12 col-m-6 col-txs-6 col-tm-6 col-tl-6 col-pc-6 col-6">
-                    <h5>Grand-Champs</h5>
+                    <strong>Grand-Champs</strong>
                         2 Rue de buléon<br>
                         56660 Saint-Jean-Brevelay<br>
                         <a href="tel:+33297604165"> Tel : 02.97.60.41.65</a>
