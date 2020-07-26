@@ -263,8 +263,8 @@
                 <aside class="col-s-12 col-tl-6 col-6">
                     <div class="fb-root"></div>
 
-                    <script async  crossorigin="anonymous"
-                        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1">
+                    <script crossorigin="anonymous"
+                        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1" defer>
                     </script>
 
                     <div class="fb-page"
@@ -281,8 +281,8 @@
 
                 <aside class="col-s-12 col-tl-6 col-6">
                     <div class="fb-root"></div>
-                    <script async defer crossorigin="anonymous"
-                        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1">
+                    <script crossorigin="anonymous"
+                        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v7.0&appId=233754721152286&autoLogAppEvents=1" defer>
                     </script>
 
                     <div class="fb-page" data-href="https://www.facebook.com/Bleuets-Rose-Grand-Champ-109237984089867"
@@ -303,9 +303,8 @@
 
     <?php include_once 'views/includes/footer.php'?>
 
-    <script src="<?= PATH?>assets/js/header.js" defer></script>
+   
     <script src="<?= PATH?>assets/js/slider.js" defer></script>
-
     <script src="<?= PATH?>assets/js/carousel.js" defer></script>
 </body>
 

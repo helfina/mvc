@@ -55,4 +55,4 @@
 
 <!-- JS Files -->
 
-
+<script src="<?= PATH?>assets/js/header.js" defer></script>
