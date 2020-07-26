@@ -30,7 +30,7 @@ define("WEBSITE_TITLE", "Bleuets Rose");
 define("WEBSITE_NAME", "Bleuets Rose");
 define("WEBSITE_URL", "https://BleuetsRose.com");
 define("WEBSITE_DESCRIPTION", "Léna Cadet spécialiste fleuriste de st jean brevelay et grand champ livraison possible");
-define("WEBSITE_KEYWORDS", "Fleuriste-fleur-bouquets-mariage-naissances-deuil-deces-fete des mere - st valentin");
+define("WEBSITE_KEYWORDS", "Créations de compositions, bouquets de mariage, anniversaire,baptême,invitation, décès, Plantes, idées cadeaux");
 define("WEBSITE_LANGUAGE", "fr");
 define("WEBSITE_AUTHOR", "Gaelle Kerforne , 2020");
 define("WEBSITE_AUTHOR_MAIL", "");
