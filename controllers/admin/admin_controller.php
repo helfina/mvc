@@ -74,8 +74,8 @@ $allImages = Images::getAllImages();
 		if($valid)
 		{
 			//chemin des dossiers
-			$path_to_image = 'assets/images/fullsize/';
-			$path_to_min = 'assets/images/min/';
+			$path_to_image = './assets/images/fullsize/';
+			$path_to_min = './assets/images/min/';
 			
 			//hash le nom de la photo
 			$filename = sha1(uniqid($image_name));
