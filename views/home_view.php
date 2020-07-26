@@ -166,7 +166,7 @@
 
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="col-12 item__body">
                             <h4 class="item__title">Titre 1</h4>
                             <p class="item__description">
@@ -178,7 +178,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 2</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -190,7 +190,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 3</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -204,7 +204,7 @@
                 <div class="row blockTwo">
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 4</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur,
@@ -215,7 +215,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14480565_1439396382742705_7265724445211225810_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 5</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
@@ -225,7 +225,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
+                            src="assets/images/slider/14468205_1439402822742061_4159949213737607134_o.jpg" alt="bouquet">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 6</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
