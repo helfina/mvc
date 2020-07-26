@@ -5,7 +5,7 @@ body {
   /*=============Galerie==================*/
 }
 body .slider {
-  margin-top: 1%;
+  margin-top: 1px;
 }
 body .slider img {
   /* je lui met une 

@@ -54,3 +54,11 @@ footer div > .liens > ul li {
     width: 50%;
   }
 }
+@media only screen and (min-width: 821px) and (max-width: 992px) {
+  footer h5 {
+    display: none;
+  }
+  footer div > .partenaire {
+    width: 51%;
+  }
+}

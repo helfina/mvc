@@ -12,8 +12,8 @@
 
     <?php include_once 'views/includes/header.php'?>
 
-    <div class="slider col-12" id="slider">
-        <img class="img-resp col-10 col-offset-1" id="slide"
+    <div class="slider row" id="slider">
+        <img class="img-resp col-12" id="slide"
             src="assets/images/slider2/13923533_1387945637887780_3845945640515613113_o.jpg" alt="Bouquets">
     </div>
 
