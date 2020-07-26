@@ -18,16 +18,16 @@
     <h1>Galerie</h1>
     <main class="container">
 
-        <section class="row filtre">
+        <div class="row filtre">
 
             <button class="col-s-3 pc-1 col-1 btn active" onclick="filterSelection('all')">Toutes les catégories</button>
             <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('mariage')">Mariage</button>
             <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('deces')">Décès</button>
             <button class="col-s-3 pc-1 col-1 btn" onclick="filterSelection('St_valentin')">St Valentin</button>
 
-        </section>
+        </div>
 
-        <section class="container photos">
+        <div class="container photos">
 
             <article class="row mariage">
 
@@ -131,7 +131,7 @@
                
             </article>
 
-        </section>
+        </div>
         
     </main>
     
