@@ -29,7 +29,7 @@ define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers et
 define("WEBSITE_TITLE", "Bleuets Rose");
 define("WEBSITE_NAME", "Bleuets Rose");
 define("WEBSITE_URL", "https://BleuetsRose.com");
-define("WEBSITE_DESCRIPTION", "Léna Cadet spécialiste fleuriste de st jean brevelay et grand champ livraison possible");
+define("WEBSITE_DESCRIPTION", "Lénaïg Cadet spécialiste fleuriste de st jean brevelay et grand champ livraison possible");
 define("WEBSITE_KEYWORDS", "Créations de compositions, bouquets de mariage, anniversaire,baptême,invitation, décès, Plantes, idées cadeaux");
 define("WEBSITE_LANGUAGE", "fr");
 define("WEBSITE_AUTHOR", "Gaelle Kerforne , 2020");
