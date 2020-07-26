@@ -122,7 +122,7 @@
                     </figcaption>
                 </figure>
                 <figure class="col-s-12 col-ps-4 col-txs-3 col-tm-3  col-tl-4 col-pc-2 col-2 item">
-                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet >
+                    <img class="item__image" src="assets/images/compoflorale.jpg" alt="bouquet" >
                     <figcaption class="item__body ">
                         <h3 class="item__title">Titre 4</h3>
                         <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis libero in magna venenatis eleifend.</p>
