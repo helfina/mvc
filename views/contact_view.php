@@ -20,7 +20,7 @@
         <section class="row contact">
             <h1 class="col-12">Bleuets Rose</h1>
   
-            <form class="col-s-12 col-ts-6 col-6" action="" method="post">
+            <form class="col-s-12 col-ts-6 col-6" action="index.php?page=contact" method="post">
             <?php if (!empty($envoi)) { echo "<h2>$envoi</h2>";} ?>
             <?php if (!empty($error)) { echo "<h2>$error</h2>";} ?>
 
@@ -41,7 +41,7 @@
                     <label class="col-12" for="ville">Ville</label>
                     <input class="col-12" type="text" name="ville" id="ville" required>
 
-                    <label class="col-12" for=" adresse">Adresse</label>
+                    <label class="col-12" for="adresse">Adresse</label>
                     <input class="col-12" type="text" name="adresse" id="adresse">
 
                     <label class="col-12" for="tel">Téléphone</label>
