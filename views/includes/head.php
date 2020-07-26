@@ -16,12 +16,6 @@
 <meta property="og:description" content="<?= WEBSITE_FACEBOOK_DESCRIPTION?>" />
 <meta property="og:image" content="<?= WEBSITE_FACEBOOK_IMAGE?>" />
 
-<!-- CSS Styles -->
-<!-- <link rel="stylesheet" href="<= PATH?>assets/styles/css/index.css"/> -->
-<!-- <link rel="stylesheet" href="<= PATH?>assets/styles/css/compass.css"> -->
-
-
-
 <!--google fonts-->
 
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&family=Merienda:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,22 +29,18 @@
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
 
-<!--******mes feuilles de styles/ my stylsheet********-->
+<!-- CSS Styles -->
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/grille.min.css">
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/footer.min.css">
-
-<!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaheaderfooter.css"> -->
-
-<!-- <link rel="stylesheet" media="screen and (max-width: 1200px)" href="<?= PATH?>assets/styles/css/mediaqueries/mediaindex.css"> -->
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/header.min.css">
 
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/cssbr/admin.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/galerie.min.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/contact.min.css">
-<link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.css">
+<link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.min.css">
 
 
 <!-- JS Files -->
