@@ -149,9 +149,9 @@
            crossorigin="" defer></script>
 
    
-    <script src="<?= PATH?>assets/js/auto.js" defer></script>
-    <script src="<?= PATH?>assets/js/openstreetmap.js" defer ></script>
-    <script src="<?= PATH?>assets/js/contact.js" defer></script>
+    <script src="<?= PATH?>assets/js/auto.min.js" defer></script>
+    <script src="<?= PATH?>assets/js/openstreetmap.min.js" defer ></script>
+    <script src="<?= PATH?>assets/js/contact.min.js" defer></script>
     
    
 </body>

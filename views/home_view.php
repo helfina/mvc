@@ -14,7 +14,7 @@
 
     <div class="slider row" id="slider">
         <img class="img-resp col-12" id="slide"
-            src="assets/images/slider2/13923533_1387945637887780_3845945640515613113_o.jpg" alt="Bouquets">
+            src="assets/images/slider/13923533_1387945637887780_3845945640515613113_o.jpg" alt="Bouquets">
     </div>
 
 
@@ -166,7 +166,7 @@
 
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/15940747_1569938823021793_6527734697637564244_n.jpg" alt="#">
+                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
                         <figcaption class="col-12 item__body">
                             <h4 class="item__title">Titre 1</h4>
                             <p class="item__description">
@@ -178,7 +178,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/15940747_1569938823021793_6527734697637564244_n.jpg" alt="#">
+                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 2</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -190,7 +190,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/15940747_1569938823021793_6527734697637564244_n.jpg" alt="#">
+                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 3</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur
@@ -204,7 +204,7 @@
                 <div class="row blockTwo">
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
+                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 4</h4>
                             <p class="item__description">Description de l'image Lorem ipsum dolor sit amet consectetur,
@@ -215,7 +215,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg " alt="#">
+                            src="assets\images\slider\14480565_1439396382742705_7265724445211225810_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 5</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
@@ -225,7 +225,7 @@
                     </figure>
                     <figure class="col-ts-2 col-pcl-3 col-3  item">
                         <img class="img_resp item__image"
-                            src="assets/images/14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
+                            src="assets\images\slider\14468205_1439402822742061_4159949213737607134_o.jpg" alt="#">
                         <figcaption class="item__body">
                             <h4 class="item__title">Titre 6</h4>
                             <p class="item__description">Description de l'image Lorem ipsum, dolor sit amet consectetur
@@ -304,8 +304,8 @@
     <?php include_once 'views/includes/footer.php'?>
 
    
-    <script src="<?= PATH?>assets/js/slider.js" defer></script>
-    <script src="<?= PATH?>assets/js/carousel.js" defer></script>
+    <script src="<?= PATH?>assets/js/slider.min.js" defer></script>
+    <script src="<?= PATH?>assets/js/carousel.min.js" defer></script>
 </body>
 
 </html>

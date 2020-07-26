@@ -50,7 +50,7 @@
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/cssbr/admin.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/galerie.min.css">
 <link rel="stylesheet" href="<?= PATH?>assets/styles/css/contact.min.css">
-<link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.min.css">
+<link rel="stylesheet" href="<?= PATH?>assets/styles/css/index.css">
 
 
 <!-- JS Files -->

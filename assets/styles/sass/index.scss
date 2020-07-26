@@ -16,7 +16,7 @@ body {
     /*=============Galerie==================*/
     
     .Galerie {
-    
+        
         article{
             transition: transform 0.3s;
             transform: translate3d(0, 0, 0);
@@ -26,7 +26,7 @@ body {
             -o-transform: translate3d(0, 0, 0);
             display: inline-flex;
             align-items: center;
-        }
+        
         .item{
     
             background-color: #fff;
@@ -51,12 +51,12 @@ body {
         }
         .precedent,.suivant{
           
-            color: black; 
-            background-color: red($color: #eb1313);
+            color: black;
+            width: 30%; 
         }
-    
     }
-    } 
+    }
+} 
     /* ========================================================
                                 Boutique
     ======================================================== */   
