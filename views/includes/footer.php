@@ -27,7 +27,7 @@
                         <img src="assets/images/logo_partenaire.png" alt="Florajet">
                     </a>
                     <a class="col-s-12 col-m-6 col-txs-12 col-tm-6 col-tl-12 col-pc-6 col-6" href="https://www.123fleurs.com/" >
-                        <img src="assets/images/logo-partenaire123.jpg" alt="123 Fleurs">
+                        <img src="https://i.123fleurs.com/18/images/marketing/logos/logo_fr_426x90.png" alt="123 Fleurs">
                     </a>
 
                 </aside>
