@@ -44,4 +44,4 @@
 
 <!-- JS Files -->
 
-<script src="<?= PATH?>assets/js/header.js" defer></script>
+<script src="<?= PATH?>assets/js/header.min.js" defer></script>

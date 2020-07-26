@@ -141,7 +141,7 @@
     <?php include_once 'views/includes/footer.php'?>
 
  <!-- ****************jQuery et jQuery UI pour mettre en place l’autocomplétion*************** -->
-
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" defer></script>
        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" defer></script>
            <!--****** JS Leaflet********-->
        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"

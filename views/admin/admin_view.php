@@ -12,21 +12,16 @@
 <body class="container">
 
     <?php include_once 'includes/header.php';?>
-    <header class="row">
-        <nav>
-
-        </nav>
-    </header>
     <h1>Administration</h1>
-    <main>
+    <main class="row">
 
-    <div class="content">
+    <div class="col-s-12 col-pc-5 content">
         <h2>Gestions des Admins</h2>
-        <ul>
+        <ul class="row">
             <?php foreach($allAdmins as $admin) : ?>
 
-            <li>
-                <?= $admin['id']?> : <?= $admin['firstname'] ?> <?= $admin['lastname'] ?>
+            <li class="col-6">
+                <?= $admin['id'] . ' : ' . $admin['firstname'] ?> <?= $admin['lastname'] ?>
 
                 <?php if($admin['confirmer'] == 0){ ?>
 
@@ -45,7 +40,7 @@
 
 
 
-        <div class="content">
+        <section class="col-s-12 col-pc-5 content">
             <h2>Upload d'Images</h2>
 
             <?php if(isset($success)):?>
@@ -60,34 +55,34 @@
 
             <?php endif;?>
 
-            <form action=" " enctype="multipart/form-data" method="post">
+            <form class="row" action="indexAdmin.php?admin=admin" enctype="multipart/form-data" method="post">
 
-                <label for="avatar">Charger une photo :</label>
+                <label class="col-12" for="avatar">Charger une photo :</label>
 
-                <input type="file" name="avatar" />
+                <input class="col-12 fil" type="file" name="avatar" />
 
                 
 
-                <select name="categorie" id="">
+                <select class="col-12" name="categorie" id="">
                    
                     <?php foreach($allCategories as $allCategories =>$category) : ?>
-                    <option value="idCategory"><?= $category['id']?><?= $category['nom']?></option>
+                    <option value="idCategory"><?= $category['id']. ' : ' . $category['nom']?></option>
                     <?php endforeach;?>
 
                 </select>
                 
-                <select name="shop" id="">
+                <select class="col-12" name="shop" id="">
                         <?php foreach($allShop as $allShop =>$shop) : ?>
-                    <option value="idShop"><?= $shop['id']?><?= $shop['nom']?></option>
+                    <option value="idShop"><?= $shop['id'] . ' : ' . $shop['nom']?></option>
                     <?php endforeach;?>
 
                 </select>
 
-                <select name="admin" id="">
+                <select class="col-12" name="admin" id="">
 
                     <?php foreach($allAdmins as $allAdmins =>$admin) : ?>
                         
-                        <option value="idAdmin"><?= $admin['id']?><?= $admin['firstname']?></option>
+                        <option value="idAdmin"><?= $admin['id'] .' : ' . $admin['firstname']?></option>
 
                         <?php endforeach;?>
                 </select>
@@ -106,24 +101,25 @@
             //PDO::FETCH_OBJ -recupere les données sous forme d'objet
 			while($data = $req->fetch(PDO::FETCH_OBJ)):?>
 
-                <div class="img">
-                    <a href="./assets/images/fullsize/<?php echo $data->image;?>">
-                        <img src="./assets/images/min/<?php echo $data->image;?>" />
+                <aside class="img">
+                <p><?php echo $data->id;?>
+                    <a  href="./assets/images/fullsize/<?php echo $data->image;?>">
+                        <img class="img-resp" src="./assets/images/min/<?php echo $data->image;?>" />
                     </a>
-                </div>
+                </p>
+                </aside>
 
                 <?php endwhile;?>
 
             </div>
 
 
-        </div>
+            </section>
         
       
     </main>
 
     <?php include_once 'includes/footer.php'; ?>
-    <script src="<?= PATH?>assets/js/header.js" defer></script>
 </body>
 
 </html>

@@ -27,11 +27,11 @@
 
 <!--******mes feuilles de styles/ my stylsheet********-->
 
-<link rel="stylesheet" href="./assets/styles/css/cssbr/grille.min.css">
+<link rel="stylesheet" href="./assets/styles/css/grille.min.css">
 
-<link rel="stylesheet" href="./assets/styles/css/cssbr/footer.min.css">
+<link rel="stylesheet" href="./assets/styles/css/footer.min.css">
 
-<link rel="stylesheet" href="./assets/styles/css/cssbr/header.min.css">
+<link rel="stylesheet" href="./assets/styles/css/header.min.css">
 
 <link rel="stylesheet" href="./assets/styles/css/admin.css">
 
