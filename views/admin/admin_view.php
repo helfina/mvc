@@ -56,7 +56,7 @@
 
                 <label class="col-12" for="avatar">Charger une photo :</label>
 
-                <input class="col-12" type="file" name="avatar" id="avatar/>
+                <input class="col-12" type="file" name="avatar" id="avatar"/>
 
 
 
