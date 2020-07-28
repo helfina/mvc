@@ -32,7 +32,7 @@
 
 
 
-	$allAdmins = Admins::getAllAdmin();
+$allAdmins = Admins::getAllAdmin();
 $allCategories = Categories::getAllCategories();
 $allShop = Magasins::getAllShop();
 $allImages = Images::getAllImages();  

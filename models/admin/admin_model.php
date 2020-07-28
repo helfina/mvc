@@ -8,7 +8,6 @@ class Admins
         public $pass;
         public $firstname;
         public $lastname;
-        public $id_article;
         public $id_image;
         public $confirmer;
  
@@ -32,7 +31,6 @@ function __construct($id)
     $this->pass = $data['pass'];
     $this->firstname = $data['firstname'];    
     $this->lastname = $data['lastname'];
-    $this->id_article = $data['id_article'];
     $this->id_image = $data['id_image'];
     $this->confirmer = $data['confirmer'];
 

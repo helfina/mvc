@@ -34,7 +34,6 @@ function __construct($id)
     $this->cp = $data['code_postal'];
     $this->city = $data['ville'];
     $this->tel = $data['tel'];
-    $this->id_horaire = $data['id_horaire']; 
     $this->id_image = $data['id_image']; 
     $this->id_category = $data['id_category'];  
 }
