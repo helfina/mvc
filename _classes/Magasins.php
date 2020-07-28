@@ -11,7 +11,7 @@ public $city;
 public $tel;
 public $id_category;
 public $id_image;
-public $id_horaire;
+public $id_admin;
 /**
  * Shop constructor .
  *(prepare + execute permette dempecher les injection sql + str_secur)
