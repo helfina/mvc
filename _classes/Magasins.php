@@ -46,21 +46,21 @@ function __construct($id)
   */
  static function getAllShop(){
      global $db;
-     $reqShop = $db->prepare('SELECT `magasins`.*, `horaires`.* , `images`.`image` FROM `magasins` LEFT JOIN `horaires` ON `horaires`.`id_shop` = `magasins`.`id` LEFT JOIN `images` ON `images`.`id_shop`= `magasins`.`id`');
+     $reqShop = $db->prepare('SELECT `magasins`.*, `admins`.`firstname`, `images`.`image` FROM `magasins` LEFT JOIN `admins` ON `magasins`.`id_admin` = `admins`.`id` LEFT JOIN `images` ON `admins`.`id_image` = `images`.`id`');
      $reqShop->execute([]);
      return $reqShop->fetchAll();
  }
 
 static function getShopStJean(){
     global $db;
-    $reqShop = $db->prepare('SELECT `magasins`.*, `horaires`.*, `images`.`image` FROM `magasins` LEFT JOIN `horaires` ON `horaires`.`id_shop` = `magasins`.`id` LEFT JOIN `images` ON `images`.`id_shop`= `magasins`.`id` WHERE `magasins`.`id` = 1');
+    $reqShop = $db->prepare('SELECT `magasins`.*, `admins`.`firstname`, `images`.`image` FROM `magasins` LEFT JOIN `admins` ON `magasins`.`id_admin` = `admins`.`id` LEFT JOIN `images` ON `admins`.`id_image` = `images`.`id` WHERE `magasins`.`id` = 1 LIMIT 0, 25');
     $reqShop->execute([]);
      return $reqShop->fetch();
 }
 
 static function getShopGrandChamp(){
     global $db;
-    $reqShop = $db->prepare('SELECT `magasins`.*, `horaires`.*, `images`.`image` FROM `magasins` LEFT JOIN `horaires` ON `horaires`.`id_shop` = `magasins`.`id` LEFT JOIN `images` ON `images`.`id_shop`= `magasins`.`id` WHERE `magasins`.`id` = 2');
+    $reqShop = $db->prepare('SELECT `magasins`.*, `admins`.`firstname`, `images`.`image` FROM `magasins` LEFT JOIN `admins` ON `magasins`.`id_admin` = `admins`.`id` LEFT JOIN `images` ON `admins`.`id_image` = `images`.`id` WHERE `magasins`.`id` = 2 LIMIT 0, 25');
     $reqShop->execute([]);
      return $reqShop->fetch();
 }
