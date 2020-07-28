@@ -1,3 +1,0 @@
-<?php
-
-$allArticle = Articles::getAllArticles();

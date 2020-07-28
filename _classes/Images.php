@@ -6,7 +6,6 @@ class Images
     public $image;
     public $id_category;
     public $id_shop;
-    public $id_article;
     public $id_admin;
     function __construct($id)
     {
