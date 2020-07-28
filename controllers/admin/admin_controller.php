@@ -70,12 +70,12 @@ if(!empty($_FILES))
 			$erreur = 'Erreur lors du transfert';
 		}
 	}
-	
+	var_dump($img);
 	if($valid)
 	{
 		//chemin des dossiers
-		$path_to_image = '/assets/images/fullsize/';
-		$path_to_min = '/assets/images/min/';
+		$path_to_image = './assets/images/fullsize/';
+		$path_to_min = './assets/images/min/';
 		
 		//hash le nom de la photo
 		$filename = sha1(uniqid($image_name));
@@ -83,7 +83,7 @@ if(!empty($_FILES))
 		$source = $img['tmp_name'];
 		$target = $path_to_image . $filename. '.'. $ext;
 		
-		move_uploaded_file($source,$target);
+			move_uploaded_file($source,$target);
 		
 		if($ext == 'jpg' || $ext == 'jpeg') {$im = imagecreatefromjpeg($path_to_image.$filename.'.'.$ext);}
 		if($ext == 'png') {$im = imagecreatefrompng($path_to_image.$filename.'.'.$ext);}
