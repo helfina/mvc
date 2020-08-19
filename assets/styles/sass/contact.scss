@@ -14,14 +14,12 @@ main {
 
         input,
         textarea {
-            min-height: 25px;
+            min-height: 25px !important;
             border: none;
             background-color: aliceblue;
         }
 
-        input#nom,input#prenom,input#cp,input#ville,input#nom,input#nadresse,input#tel,input#email,input#objet,input#msg{
-            padding: 10px;
-        }
+     
 
         textarea:nth-child(2) {
             min-height: 100px;

@@ -1,0 +1,54 @@
+.content {
+  font-size: small;
+  background: #FFF;
+  margin: 3px;
+  height: fit-content;
+  border: #777 1px solid;
+}
+.content label {
+  text-align: center;
+  margin: 2%;
+  font-size: 1.5em;
+}
+.content input {
+  margin: 5px;
+}
+.content input.submit {
+  margin-top: 1%;
+  width: 90px;
+  cursor: pointer;
+  border: 1px solid #222;
+  background: #333;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.content input.submit:hover {
+  background: #444;
+}
+.content select, .content li {
+  margin: 1px;
+  height: auto;
+}
+.content .error {
+  color: #FF6262;
+  font-size: 1.1em;
+}
+.content .success {
+  color: green;
+  font-size: larger;
+}
+.content .img {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.content a {
+  color: black;
+}
+.content #gallerie {
+  margin-top: 2%;
+}
+
+.row:first-child {
+  max-height: 300px;
+}

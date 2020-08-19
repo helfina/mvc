@@ -11,7 +11,7 @@ main form > fieldset label {
 }
 main form > fieldset input,
 main form > fieldset textarea {
-  min-height: 25px;
+  height: 25px;
   border: none;
   background-color: aliceblue;
 }
