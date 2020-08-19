@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user//Bleuets-Rose.com/
+    - export DEPLOYPATH=/home/user/Bleuets-Rose.com/
     - /bin/cp -R images $DEPLOYPATH
+
