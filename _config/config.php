@@ -42,21 +42,21 @@ define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
-define("DATABASE_HOST", $_ENV["DATABASE_HOST"]);
-define("DATABASE_NAME", $_ENV["DATABASE_NAME"]);
-define("DATABASE_USER", $_ENV["DATABASE_USER"]);
-define("DATABASE_PASSWORD", $_ENV["DATABASE_PASSWORD"]);
+define("DATABASE_HOST", "localhost");
+define("DATABASE_NAME", "gake0333_bleuetsrose");
+define("DATABASE_USER", "gake0333_bleuetsrose");
+define("DATABASE_PASSWORD", "sEPSrM8TPbTn");
 
 //Language
 define("DEFAULT_LANGUAGE", "fr");
 
 //SMTP Connexion
 
-define("SMTP_HOST", $_ENV["SMTP_HOST"]);
-define("SMTP_USER", $_ENV["SMTP_USER"]);
-define("SMTP_PASS", $_ENV["SMTP_PASS"]);
-define("SMTP_PORT", $_ENV["SMTP_PORT"]);
+define("SMTP_HOST", "georgie.o2switch.net");
+define("SMTP_USER", "gake0333");
+define("SMTP_PASS", "66QITS2ERLpq");
+define("SMTP_PORT", "587");
 
 // addAdress contact form
-define("CONTACT_ADD", $_ENV["CONTACT_ADD"]);
+define("CONTACT_ADD", "contact@gaelle-kfe.com");
 
