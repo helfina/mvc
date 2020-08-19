@@ -11,7 +11,7 @@ body .slider img {
   /* je lui met une 
   hauteur de  600px pour que l'image
   ne soit pas trop haute */
-  max-height: 550px;
+  height: auto;
 }
 body .Galerie article {
   transition: transform 0.3s;
