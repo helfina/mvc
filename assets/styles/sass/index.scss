@@ -7,9 +7,9 @@ body {
             margin-top: 1px;
             img {
                 /* je lui met une 
-                hauteur de  600px pour que l'image
+                hauteur de  800px pour que l'image
                 ne soit pas trop haute */
-                height: auto;
+                max-height:800px
             }
         }
     

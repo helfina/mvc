@@ -66,7 +66,6 @@ if(!empty($_FILES))
 			$erreur = 'Erreur lors du transfert';
 		}
 	}
-	var_dump($img);
 	if($valid)
 	{
 		//chemin des dossiers
