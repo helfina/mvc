@@ -12,6 +12,7 @@
 
     <?php include_once 'includes/header.php';?>
     <h1>Administration</h1>
+   
     <main class="row">
 
         <section class="col-s-12 col-tm-3 col-pc-3 col-3 content">

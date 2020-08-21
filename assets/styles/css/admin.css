@@ -52,3 +52,7 @@
 .row:first-child {
   max-height: 300px;
 }
+
+body#connect form > fieldset {
+  text-align: center;
+}

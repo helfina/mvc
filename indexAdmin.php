@@ -1,4 +1,3 @@
-<?php realpath('indexAdmin.php');?>
 <?php
 
 //autoload.php genere avec composer
@@ -18,13 +17,21 @@ include_once '_functions/functions.php';
 require_once '_classes/Autoloader.php';
 Autoloader::register();
 
-// Définition de la page courante
-if (isset($_GET['admin']) AND !empty($_GET['admin'])) {
-    $admin = trim(strtolower($_GET['admin']));
-} 
+    
 
-else{
+// Définition de la page courante
+
+if (isset($_GET['admin']) AND !empty($_GET['admin'])) {   
+   
+    $admin = trim(strtolower($_GET['admin']));
+
+}elseif(!is_connected()) {          
+  
+    $admin = 'adminLog' ;   
+}else{
+   
     $admin = 'admin';
+  
 }
 
 

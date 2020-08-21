@@ -62,14 +62,6 @@ function __construct($id)
         return $reqAdmin;
     }
 
-    static function connexAdmin($log){
-
-        global $db;
-        $reqAdmin = $db->prepare('SELECT `log`, `pass` FROM `admins` WHERE id = ?');
-        $reqAdmin->execute([$log]);
-        $reqAdmin = $reqAdmin->fetch();
-        return $reqAdmin;
-    }
  /**
  * permet de supprimer un admin de la db
  *
@@ -84,7 +76,11 @@ function __construct($id)
         $reqAdmin->execute([]);
         return $reqAdmin->fetch();
     }
-
+/**
+ * permet de confirmer un admin de la db
+ *
+ * @return void
+ */
     static function confirmAdmin(){
         
         global $db;
@@ -94,6 +90,6 @@ function __construct($id)
 
     }
 
-
+    
 
 }

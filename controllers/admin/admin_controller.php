@@ -1,15 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
-//  if (!isset($_SESSION['id']) OR $_SESSION['id'] != 1){
-//      exit();
-//  }
 
 /**
  * script pour pouvoir confirmer ou supprimer les autre administrateur
  */
-// var_dump($_GET);
-// die();
 
 //fonction pour modifier un admin(confirmer)
      if(isset($_GET['confirmer']) AND !empty($_GET['confirmer'])){
@@ -19,7 +14,8 @@ require 'vendor/autoload.php';
          global $db;
          $reqAdmin = $db->prepare('UPDATE admins SET confirmer = 1 WHERE id = ?');
          $reqAdmin->execute([$confirme]);
-     }
+	 }
+	 
 //fonction pour delete un admin
      if(isset($_GET['supprimer']) AND !empty($_GET['supprimer'])){
          //on conveti en int pour etre sur que s'est un nombre entier
