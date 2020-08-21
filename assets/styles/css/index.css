@@ -9,9 +9,9 @@ body .slider {
 }
 body .slider img {
   /* je lui met une 
-  hauteur de  600px pour que l'image
+  hauteur de  800px pour que l'image
   ne soit pas trop haute */
-  height: auto;
+  height: 800px;
 }
 body .Galerie article {
   transition: transform 0.3s;
