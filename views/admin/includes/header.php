@@ -24,7 +24,7 @@
                     <a href="index.php?page=contact">Contact</a>
                 </li>
             <!-- ?php if (is_connected() == TRUE ): > -->
-            <li><a href="indexAdmin.php?admin=adminLog">Se déconnecter</a></li>
+            <li><a href="indexAdmin.php?">Déconnection</a></li>
              
             <!-- <php unset($_SESSION['connected']); endif; > -->
                 
