@@ -45,14 +45,11 @@ define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
+
 define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "gake0333_bleuetsrose");
-define("DATABASE_USER", "gake0333_bleuetsrose");
-define("DATABASE_PASSWORD", "sEPSrM8TPbTn");
-// define("DATABASE_HOST", "localhost");
-// define("DATABASE_NAME", "bleuetsrose2");
-// define("DATABASE_USER", "root");
-// define("DATABASE_PASSWORD", "");
+define("DATABASE_NAME", "bleuetsrose2");
+define("DATABASE_USER", "root");
+define("DATABASE_PASSWORD", "");
 //Language
 define("DEFAULT_LANGUAGE", "fr");
 

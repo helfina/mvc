@@ -27,12 +27,16 @@ if (isset($_GET['admin']) AND !empty($_GET['admin'])) {
 
 }elseif(!is_connected()) {          
   
-    $admin = 'adminLog' ;   
-}else{
+    $admin = 'adminLog' ;  
+  
+        
+}elseif(is_connected()){
    
     $admin = 'admin';
   
 }
+
+
 
 
 // Tableau contenant toutes les pages
@@ -56,3 +60,6 @@ if (in_array($admin.'_controller.php', $allAdmins)) {
     include_once 'views/error_view.php';
 
 }
+
+
+

@@ -64,6 +64,6 @@ function getPageLanguage($lang, $pages){
      */
     function is_connected(): bool {
         
-        return !empty($_SESSION['connecte']);
+        return !empty($_SESSION['connected']);
     }
     
