@@ -11,6 +11,7 @@ if (file_exists(__DIR__ . '/.env')) {
 }
 // Inclusion des fichiers principaux
 include_once '_config/config.php';  //Demarre la session
+
 include_once '_functions/functions.php';
 
 // Autoloader
